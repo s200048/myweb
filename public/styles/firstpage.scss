@@ -1,0 +1,50 @@
+/* First Page */
+section.homePage1 {
+    
+    position: relative;
+    // display: flex;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+
+    div.firstBackgoundPic{
+        background: url(../../images/firstpage/first.jpg);
+        height: 80vh;
+        display: flex;
+        background-position: center;
+        background-size: cover;
+        p{
+            color: #235057;
+            font-size: 3.5rem;
+            text-align: center;
+            font-weight: normal;
+            margin: 3rem;
+        }
+    }
+
+    // & div.homePage1Text {
+    //     position: absolute;
+    //     text-align: center;
+    //     font-weight: normal;
+    //     margin: 3rem;
+    //     & p{
+    //         color: #235057;
+    //         font-size: 3rem;
+    //     }
+    //     & button {
+    //         color: #235057;
+    //         font-size: 1.5rem;
+    //         padding: 1rem 1rem;
+    //         border-radius: 1rem;
+    //     }
+    // }
+}
+
+/* section.homePage1 div.firstBackgoundPic {
+
+} */
+
+/* .firstBackgound {
+    width: 100%;
+    height: 100%;
+} */

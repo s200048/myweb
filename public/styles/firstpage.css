@@ -1,0 +1,34 @@
+/* First Page */
+section.homePage1 {
+  position: relative;
+  /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+section.homePage1 div.firstBackgoundPic {
+  background: url(../../images/firstpage/first.jpg);
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+}
+
+section.homePage1 div.firstBackgoundPic p {
+  color: #235057;
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: normal;
+  margin: 3rem;
+}
+
+/* section.homePage1 div.firstBackgoundPic {
+
+} */
+/* .firstBackgound {
+    width: 100%;
+    height: 100%;
+} */
+/*# sourceMappingURL=firstpage.css.map */

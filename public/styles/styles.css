@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* header */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  padding: 0.5rem 1.5rem;
+}
+
+header div.logo {
+  -webkit-box-flex: 6;
+      -ms-flex-positive: 6;
+          flex-grow: 6;
+}
+
+header div.logo p {
+  color: #48A4A4;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* align-items: flex-start; */
+  /* justify-content: space-around; */
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+}
+
+header nav ul li {
+  list-style-type: none;
+  padding: 0rem 1rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #48A4A4;
+}
+
+header nav ul li a:hover {
+  color: black;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+/* First Page */
+section.homePage1 {
+  position: relative;
+  /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+section.homePage1 div.firstBackgoundPic {
+  background: url(../../images/firstpage/first.jpg);
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+}
+
+section.homePage1 div.firstBackgoundPic p {
+  color: #235057;
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: normal;
+  margin: 3rem;
+}
+
+/* section.homePage1 div.firstBackgoundPic {
+
+} */
+/* .firstBackgound {
+    width: 100%;
+    height: 100%;
+} */
+/*# sourceMappingURL=styles.css.map */

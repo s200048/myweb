@@ -1,0 +1,35 @@
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    padding: 0.5rem 1.5rem;
+
+    & div.logo {
+        flex-grow: 6;
+        & p{
+            color: #48A4A4;
+        }
+    }
+
+    & nav ul {
+        display: flex;
+        /* align-items: flex-start; */
+        /* justify-content: space-around; */
+        flex-grow: 4;
+        & li {
+            list-style-type: none;
+            padding: 0rem 1rem;
+            & a {
+                text-decoration: none;
+                color: #48A4A4;
+                &:hover {
+                    color: black;
+                    transition: 0.5s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+
