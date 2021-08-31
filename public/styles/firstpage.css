@@ -14,14 +14,98 @@ section.homePage1 div.firstBackgoundPic {
   display: flex;
   background-position: center;
   background-size: cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 0;
 }
 
 section.homePage1 div.firstBackgoundPic p {
   color: #235057;
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: center;
   font-weight: normal;
   margin: 3rem;
+  z-index: 2;
+  font-weight: bold;
+}
+
+section.homePage1 div.firstBackgoundPic a {
+  text-decoration: none;
+  background-color: white;
+  border: solid 2px;
+  color: #235057;
+  font-size: 1.25rem;
+  padding: 1rem 2.5rem;
+  text-align: center;
+  z-index: 2;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  opacity: 0.4;
+}
+
+section.homePage1 div.firstBackgoundPic a:hover {
+  opacity: 1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+section.homePage1 .homePagefilter {
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 80vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+section.aboutUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.aboutUs .aboutContent h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 3rem;
+}
+
+section.aboutUs .aboutContent a {
+  border: solid 1px;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  display: block;
+  margin: 0.5% 33%;
+}
+
+section.aboutUs .aboutContent p {
+  font-size: 1.5rem;
+  line-height: 10vh;
+  padding: 0rem 5rem 4rem 5rem;
+}
+
+section.aboutUs .aboutContent h1, section.aboutUs .aboutContent a {
+  text-align: center;
+}
+
+section.aboutUs .imgContent {
+  width: 50vw;
+}
+
+section.aboutUs .imgContent .aboutimg1,
+section.aboutUs .imgContent .aboutimg2 {
+  width: 50vw;
+  height: 50vh;
 }
 
 /* section.homePage1 div.firstBackgoundPic {

@@ -17,7 +17,9 @@ header div.logo {
 }
 
 header div.logo p {
+  font-size: 1.5rem;
   color: #48A4A4;
+  font-weight: bold;
 }
 
 header nav ul {
@@ -26,24 +28,21 @@ header nav ul {
   display: flex;
   /* align-items: flex-start; */
   /* justify-content: space-around; */
-  -webkit-box-flex: 4;
-      -ms-flex-positive: 4;
-          flex-grow: 4;
 }
 
 header nav ul li {
   list-style-type: none;
-  padding: 0rem 1rem;
+  padding: 0rem 2.2rem;
 }
 
 header nav ul li a {
   text-decoration: none;
   color: #48A4A4;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 header nav ul li a:hover {
   color: black;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
 }
 /*# sourceMappingURL=header.css.map */

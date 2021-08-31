@@ -8,24 +8,29 @@ header {
     & div.logo {
         flex-grow: 6;
         & p{
+            font-size: 1.5rem;
             color: #48A4A4;
+            font-weight: bold;
         }
     }
 
-    & nav ul {
-        display: flex;
-        /* align-items: flex-start; */
-        /* justify-content: space-around; */
-        flex-grow: 4;
-        & li {
-            list-style-type: none;
-            padding: 0rem 1rem;
-            & a {
-                text-decoration: none;
-                color: #48A4A4;
-                &:hover {
-                    color: black;
+    & nav {
+        // flex-grow: 4;
+
+        ul {
+            display: flex;
+            /* align-items: flex-start; */
+            /* justify-content: space-around; */
+            & li {
+                list-style-type: none;
+                padding: 0rem 2.2rem;
+                & a {
+                    text-decoration: none;
+                    color: #48A4A4;
                     transition: 0.5s ease-in-out;
+                    &:hover {
+                        color: black;
+                    }
                 }
             }
         }
