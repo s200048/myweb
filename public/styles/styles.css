@@ -181,4 +181,7 @@ section.aboutUs .imgContent .aboutimg2 {
     width: 100%;
     height: 100%;
 } */
+#aboutMore #aboutMoreText h1 {
+  font-size: 2rem;
+}
 /*# sourceMappingURL=styles.css.map */

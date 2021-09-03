@@ -5,6 +5,8 @@
     font-family: 'Noto Sans HK', sans-serif;
 }
 
-@import "./header";
+@import "./header/header.scss";
 
-@import "./firstpage";
+@import "./firstpage/firstpage.scss";
+
+@import "./about/about.scss";
