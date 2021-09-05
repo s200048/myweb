@@ -103,7 +103,8 @@ section.aboutUs .aboutContent p {
   padding: 0rem 5rem 4rem 5rem;
 }
 
-section.aboutUs .aboutContent h1, section.aboutUs .aboutContent a {
+section.aboutUs .aboutContent h1,
+section.aboutUs .aboutContent a {
   text-align: center;
 }
 
@@ -115,6 +116,62 @@ section.aboutUs .imgContent .aboutimg1,
 section.aboutUs .imgContent .aboutimg2 {
   width: 50vw;
   height: 50vh;
+}
+
+section#servicePage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+}
+
+section#servicePage .serviceText h1,
+section#servicePage .serviceText p {
+  text-align: center;
+}
+
+section#servicePage .serviceText h1 {
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+
+section#servicePage .serviceText p {
+  font-size: 1.5rem;
+  margin: 3rem 3rem 1.25rem 3rem;
+  line-height: 5vh;
+  text-indent: 30px;
+  letter-spacing: 5px;
+}
+
+section#servicePage .graphicPic ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#servicePage .graphicPic ul li {
+  margin: 3rem;
+  padding: 5rem;
+}
+
+section#servicePage .graphicPic ul li i {
+  font-size: 4.5rem;
+}
+
+section#servicePage .graphicPic ul li p {
+  font-size: 1.5rem;
 }
 
 /* section.homePage1 div.firstBackgoundPic {

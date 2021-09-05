@@ -1,7 +1,18 @@
 #aboutMore {
-    #aboutMoreText{
-        h1 {
-        font-size: 4rem;
-        }
+  height: 90vh;
+  display: flex;
+  #aboutMoreText {
+    width: 50vw;
+    height: 90vh;
+    h1 {
+      font-size: 3rem;
     }
+  }
+  #aboutMorepic {
+    width: 50vw;
+    height: 90vh;
+    background: url(../../images/aboutNewPage/aboutmore.jpg);
+    background-position: center;
+    background-size: cover;
+  }
 }
