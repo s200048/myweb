@@ -144,34 +144,59 @@ section#servicePage .serviceText p {
   margin: 3rem 3rem 1.25rem 3rem;
   line-height: 5vh;
   text-indent: 30px;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
 }
 
-section#servicePage .graphicPic ul {
+section#servicePage .graphicPic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+section#servicePage .graphicPic ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   list-style-type: none;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 section#servicePage .graphicPic ul li {
-  margin: 3rem;
-  padding: 5rem;
+  margin: 3rem 4rem;
+  padding: 3rem 4rem;
 }
 
 section#servicePage .graphicPic ul li i {
   font-size: 4.5rem;
+  margin-bottom: 2rem;
 }
 
 section#servicePage .graphicPic ul li p {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f1ebea), to(#272538));
+  background: linear-gradient(to bottom, #f1ebea 0%, #272538 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-color: white;
+}
+
+#One-stop {
+  background: #dd8f8f;
+}
+
+#One-stop .Pic {
+  width: 50px;
+  height: 50px;
 }
 
 /* section.homePage1 div.firstBackgoundPic {
