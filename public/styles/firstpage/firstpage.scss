@@ -176,60 +176,71 @@ section#servicePage {
 // One-stop homepage
 
 #One-stop {
-  background: rgb(221, 143, 143);
-  .half1{
-    height: 40vh;
-    position: relative;
-    top: 3rem;
-    left: 2rem;
-    .half1-text{
-      width: 800px;
-      height: 100%;
-      h1{
-        font-size: 3rem;
-        padding-bottom: 3rem;
-        text-align: center;
+  .container{
+    height: 100vh;
+    .half1{
+      height: 40vh;
+      position: relative;
+      top: 3rem;
+      left: 2rem;
+      .half1-text{
+        width: 50%;
+        height: 100%;
+        h1{
+          font-size: 3rem;
+          padding-bottom: 3rem;
+          padding-left: 20%;
+        }
+        p{
+          font-size: 1.5rem;
+          line-height: 3vh;
+          text-align: start;
+          padding-left: 20%;
+          letter-spacing: 4px;
+        }
       }
-      p{
-        font-size: 1.5rem;
-        padding-left: 3.5rem;
-        line-height: 3vh;
-        text-align: start;
-        letter-spacing: 4px;
-      }
-    }
-    .half1-pic {
-      background: url(../../images/homepage4/office.jpg);
-      width: 35vw;
-      height: 30vh;
-      top: 30px;
-      right: 0;
-      margin-right: 100px;
-      background-position: center;
-      background-size: cover;
-      position: absolute;
-    }
-  }
-  .half2{
-    height: 40vh;
-    display: flex;
-    ul{
-      .half22{
-        width: 20vw;
-        height: 20vh;
+      .half1-pic {
+        background: url(../../images/homepage4/office.jpg);
+        width: 35vw;
+        height: 30vh;
+        top: 30px;
+        right: 0;
+        margin-right: 100px;
         background-position: center;
         background-size: cover;
+        position: absolute;
       }
-      .pic1{
-        background: url(../../images/homepage4/planning2.jpg);
-        
-      }
-      .pic2{
-        background: url(../../images/homepage4/inquiry.jpg);
-        
-      }
-      .pic3{
-        background: url(../../images/homepage4/design.jpg);
+    }
+    .half2{
+      display: flex;
+      justify-content: space-evenly;
+      padding: 14vh 0rem;
+      ul{
+        .half22{
+          width: 25vw;
+          height: 25vh;
+          
+        }
+        p{
+          text-align: center;
+          font-size: 1.6rem;
+          padding: 4vh 0rem;
+        }
+        .pic1{
+          background: url(../../images/homepage4/planning2.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        .pic2{
+          background: url(../../images/homepage4/inquiry.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        .pic3{
+          background: url(../../images/homepage4/design.jpg);
+          background-position: center;
+          background-size: cover;
+        }
       }
     }
   }

@@ -1,0 +1,61 @@
+#contact-page {
+  height: 90vh;
+}
+
+#contact-page .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contact-page .container .contact-text {
+  text-align: center;
+  width: 50%;
+  padding: 5rem;
+}
+
+#contact-page .container .contact-text h1 {
+  font-size: 3rem;
+  padding: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+#contact-page .container .contact-text p {
+  font-size: 1.5rem;
+  padding: 3rem;
+}
+
+#contact-page .container .contact-pic {
+  width: 50%;
+  background: url(../../images/contactPage/pexels-daria-shevtsova-892618.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#contact-form {
+  height: 100vh;
+}
+
+#contact-form .container-form {
+  text-align: center;
+  padding: 0 3rem;
+}
+
+#contact-form .container-form h1 {
+  padding: 3rem;
+  font-size: 3rem;
+}
+
+#contact-form .container-form form input {
+  width: 40%;
+  margin-top: 2rem;
+}
+
+#contact-form .container-form form .one, #contact-form .container-form form .two, #contact-form .container-form form .three, #contact-form .container-form form .four, #contact-form .container-form form .five {
+  height: 30px;
+}
+
+#contact-form .container-form form .six {
+  height: 100px;
+}
+/*# sourceMappingURL=contact.css.map */

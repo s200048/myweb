@@ -249,37 +249,37 @@ section#servicePage .graphicPic ul li p {
   border-color: white;
 }
 
-#One-stop {
-  background: #dd8f8f;
+#One-stop .container {
+  height: 100vh;
 }
 
-#One-stop .half1 {
+#One-stop .container .half1 {
   height: 40vh;
   position: relative;
   top: 3rem;
   left: 2rem;
 }
 
-#One-stop .half1 .half1-text {
-  width: 800px;
+#One-stop .container .half1 .half1-text {
+  width: 50%;
   height: 100%;
 }
 
-#One-stop .half1 .half1-text h1 {
+#One-stop .container .half1 .half1-text h1 {
   font-size: 3rem;
   padding-bottom: 3rem;
-  text-align: center;
+  padding-left: 20%;
 }
 
-#One-stop .half1 .half1-text p {
+#One-stop .container .half1 .half1-text p {
   font-size: 1.5rem;
-  padding-left: 3.5rem;
   line-height: 3vh;
   text-align: start;
+  padding-left: 20%;
   letter-spacing: 4px;
 }
 
-#One-stop .half1 .half1-pic {
+#One-stop .container .half1 .half1-pic {
   background: url(../../images/homepage4/office.jpg);
   width: 35vw;
   height: 30vh;
@@ -291,30 +291,43 @@ section#servicePage .graphicPic ul li p {
   position: absolute;
 }
 
-#One-stop .half2 {
-  height: 40vh;
+#One-stop .container .half2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 14vh 0rem;
 }
 
-#One-stop .half2 ul .half22 {
-  width: 20vw;
-  height: 20vh;
+#One-stop .container .half2 ul .half22 {
+  width: 25vw;
+  height: 25vh;
+}
+
+#One-stop .container .half2 ul p {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 4vh 0rem;
+}
+
+#One-stop .container .half2 ul .pic1 {
+  background: url(../../images/homepage4/planning2.jpg);
   background-position: center;
   background-size: cover;
 }
 
-#One-stop .half2 ul .pic1 {
-  background: url(../../images/homepage4/planning2.jpg);
-}
-
-#One-stop .half2 ul .pic2 {
+#One-stop .container .half2 ul .pic2 {
   background: url(../../images/homepage4/inquiry.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
-#One-stop .half2 ul .pic3 {
+#One-stop .container .half2 ul .pic3 {
   background: url(../../images/homepage4/design.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 /* section.homePage1 div.firstBackgoundPic {
@@ -332,20 +345,95 @@ section#servicePage .graphicPic ul li p {
 }
 
 #aboutMore #aboutMoreText {
-  width: 50vw;
+  width: 50%;
   height: 90vh;
+  padding: 2rem 3rem 3rem 3rem;
+  text-align: center;
 }
 
 #aboutMore #aboutMoreText h1 {
+  margin: 3rem;
   font-size: 3rem;
 }
 
+#aboutMore #aboutMoreText .para {
+  font-size: 1rem;
+  line-height: 5vh;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+}
+
+#aboutMore #aboutMoreText .p1 {
+  text-indent: 40px;
+}
+
 #aboutMore #aboutMorepic {
-  width: 50vw;
+  width: 50%;
   height: 90vh;
   background: url(../../images/aboutNewPage/aboutmore.jpg);
   background-position: center;
   background-size: cover;
+}
+
+#contact-page {
+  height: 90vh;
+}
+
+#contact-page .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contact-page .container .contact-text {
+  text-align: center;
+  width: 50%;
+  padding: 5rem;
+}
+
+#contact-page .container .contact-text h1 {
+  font-size: 3rem;
+  padding: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+#contact-page .container .contact-text p {
+  font-size: 1.5rem;
+  padding: 3rem;
+}
+
+#contact-page .container .contact-pic {
+  width: 50%;
+  background: url(../../images/contactPage/pexels-daria-shevtsova-892618.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#contact-form {
+  height: 100vh;
+}
+
+#contact-form .container-form {
+  text-align: center;
+  padding: 0 3rem;
+}
+
+#contact-form .container-form h1 {
+  padding: 3rem;
+  font-size: 3rem;
+}
+
+#contact-form .container-form form input {
+  width: 40%;
+  margin-top: 2rem;
+}
+
+#contact-form .container-form form .one, #contact-form .container-form form .two, #contact-form .container-form form .three, #contact-form .container-form form .four, #contact-form .container-form form .five {
+  height: 30px;
+}
+
+#contact-form .container-form form .six {
+  height: 100px;
 }
 
 footer {

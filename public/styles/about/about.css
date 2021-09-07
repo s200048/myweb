@@ -6,16 +6,30 @@
 }
 
 #aboutMore #aboutMoreText {
-  width: 50vw;
+  width: 50%;
   height: 90vh;
+  padding: 2rem 3rem 3rem 3rem;
+  text-align: center;
 }
 
 #aboutMore #aboutMoreText h1 {
+  margin: 3rem;
   font-size: 3rem;
 }
 
+#aboutMore #aboutMoreText .para {
+  font-size: 1rem;
+  line-height: 5vh;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+}
+
+#aboutMore #aboutMoreText .p1 {
+  text-indent: 40px;
+}
+
 #aboutMore #aboutMorepic {
-  width: 50vw;
+  width: 50%;
   height: 90vh;
   background: url(../../images/aboutNewPage/aboutmore.jpg);
   background-position: center;

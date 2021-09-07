@@ -1,15 +1,36 @@
 #aboutMore {
   height: 90vh;
   display: flex;
-  #aboutMoreText {
-    width: 50vw;
+  // #aboutMoreText {
+  //   width: 50vw;
+  //   height: 90vh;
+  // }
+
+  #aboutMoreText{
+    width: 50%;
     height: 90vh;
-    h1 {
+    padding: 2rem 3rem 3rem 3rem;
+    text-align: center;
+    
+    h1{
+      margin: 3rem;
       font-size: 3rem;
     }
+    .para{
+      font-size: 1rem;
+      line-height: 5vh;
+      margin-bottom: 3rem;
+      padding: 0 2rem;
+      // text-transform: full-size-kana;
+    }
+    .p1{
+      text-indent: 40px;
+    }
+
   }
+
   #aboutMorepic {
-    width: 50vw;
+    width: 50%;
     height: 90vh;
     background: url(../../images/aboutNewPage/aboutmore.jpg);
     background-position: center;
