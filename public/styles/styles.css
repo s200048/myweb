@@ -18,6 +18,10 @@ header {
           align-items: center;
   height: 10vh;
   padding: 0.5rem 1.5rem;
+  position: -webkit-sticky;
+  position: sticky;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 header div.logo {
@@ -55,6 +59,22 @@ header nav ul li a {
 
 header nav ul li a:hover {
   color: black;
+}
+
+.dynamicHeader {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.dynamicHeader a {
+  color: white;
+}
+
+.dynamicHeader a:hover {
+  color: #48A4A4;
 }
 
 /* First Page */
@@ -375,6 +395,83 @@ section#servicePage .graphicPic ul li p {
   background-size: cover;
 }
 
+#casepage {
+  height: 180vh;
+}
+
+#casepage .case-text {
+  text-align: center;
+  padding: 3rem;
+}
+
+#casepage .case-text h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+#casepage .case-text p {
+  font-size: 1rem;
+}
+
+#casepage .case-pic {
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 7vw;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  padding: 4rem;
+}
+
+#casepage .case-pic .case {
+  height: 35vh;
+  margin-bottom: 8rem;
+  position: relative;
+}
+
+#casepage .case-pic .case p {
+  position: absolute;
+  bottom: -7vh;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+#casepage .case-pic .pic1 {
+  background: url(../../images/casePage/210521_circle_0.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#casepage .case-pic .pic2 {
+  background: url(../../images/casePage/210527_suyufish_x.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#casepage .case-pic .pic3 {
+  background: url(../../images/casePage/210530_marasovic_0.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#casepage .case-pic .pic4 {
+  background: url(../../images/casePage//210716_cl_0.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#casepage .case-pic .pic5 {
+  background: url(../../images/casePage/210716_modernhouse_0.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#casepage .case-pic .pic6 {
+  background: url(../../images/casePage/210717_think_0.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
 #contact-page {
   height: 90vh;
 }
@@ -404,6 +501,7 @@ section#servicePage .graphicPic ul li p {
 
 #contact-page .container .contact-pic {
   width: 50%;
+  height: 90vh;
   background: url(../../images/contactPage/pexels-daria-shevtsova-892618.jpg);
   background-size: cover;
   background-position: center;
@@ -419,13 +517,30 @@ section#servicePage .graphicPic ul li p {
 }
 
 #contact-form .container-form h1 {
-  padding: 3rem;
+  padding: 10rem 0 3rem 0;
   font-size: 3rem;
 }
 
-#contact-form .container-form form input {
+#contact-form .container-form form input, #contact-form .container-form form textarea {
   width: 40%;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+}
+
+#contact-form .container-form form input::-webkit-input-placeholder, #contact-form .container-form form textarea::-webkit-input-placeholder {
+  font-weight: bold;
+}
+
+#contact-form .container-form form input:-ms-input-placeholder, #contact-form .container-form form textarea:-ms-input-placeholder {
+  font-weight: bold;
+}
+
+#contact-form .container-form form input::-ms-input-placeholder, #contact-form .container-form form textarea::-ms-input-placeholder {
+  font-weight: bold;
+}
+
+#contact-form .container-form form input::placeholder, #contact-form .container-form form textarea::placeholder {
+  font-weight: bold;
 }
 
 #contact-form .container-form form .one, #contact-form .container-form form .two, #contact-form .container-form form .three, #contact-form .container-form form .four, #contact-form .container-form form .five {
@@ -434,6 +549,25 @@ section#servicePage .graphicPic ul li p {
 
 #contact-form .container-form form .six {
   height: 100px;
+}
+
+#contact-form .container-form form button {
+  width: 10%;
+  border: solid 1px;
+  color: black;
+  background: white;
+  padding: 0.5rem 1.5rem;
+  margin-top: 1.5rem;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+#contact-form .container-form form button:hover {
+  opacity: 1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 
 footer {

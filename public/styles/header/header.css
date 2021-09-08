@@ -8,6 +8,10 @@ header {
           align-items: center;
   height: 10vh;
   padding: 0.5rem 1.5rem;
+  position: -webkit-sticky;
+  position: sticky;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 header div.logo {
@@ -45,5 +49,21 @@ header nav ul li a {
 
 header nav ul li a:hover {
   color: black;
+}
+
+.dynamicHeader {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.dynamicHeader a {
+  color: white;
+}
+
+.dynamicHeader a:hover {
+  color: #48A4A4;
 }
 /*# sourceMappingURL=header.css.map */

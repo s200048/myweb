@@ -31,4 +31,16 @@
     
     
 </body>
+<script>
+    let header = document.querySelector("header");
+
+    addEventListener("scroll", () => {
+    //console.log(window.pageYOffset);
+    if (window.pageYOffset === 0) {
+        header.classList.remove("dynamicHeader");
+    } else {
+        header.classList.add("dynamicHeader"); 
+    }
+    });
+</script>
 </html>

@@ -4,7 +4,11 @@ header {
     align-items: center;
     height: 10vh;
     padding: 0.5rem 1.5rem;
-
+    position: sticky;
+    // top: 0;
+    // left: 0;
+    // z-index: 3;
+    transition: all 0.3s ease-in;
     & div.logo {
         flex-grow: 6;
         & p{
@@ -38,4 +42,16 @@ header {
     }
 }
 
-
+.dynamicHeader{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    a{
+        color: white;
+        &:hover{
+            color: #48A4A4;
+        }
+    }
+}
