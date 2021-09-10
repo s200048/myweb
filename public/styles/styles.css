@@ -6,6 +6,10 @@
   font-family: "Noto Sans HK", sans-serif;
   text-decoration: none;
   list-style-type: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 html {
@@ -92,8 +96,16 @@ header nav ul li a:hover {
   position: fixed;
   bottom: 30px;
   right: 30px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 0;
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#back-top:hover {
+  background-color: black;
 }
 
 #back-top i {
@@ -101,8 +113,9 @@ header nav ul li a:hover {
   color: #48a4a4;
 }
 
-.showBtn a {
-  background-color: black;
+#back-top.showBtn {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 section.homePage1 {
@@ -176,6 +189,7 @@ section.aboutUs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 section.aboutUs .aboutContent h1 {
@@ -304,7 +318,6 @@ section#servicePage .graphicPic ul li p {
   height: 40vh;
   position: relative;
   top: 3rem;
-  left: 2rem;
 }
 
 #One-stop .container .half1 .half1-text {
@@ -314,13 +327,14 @@ section#servicePage .graphicPic ul li p {
 
 #One-stop .container .half1 .half1-text h1 {
   font-size: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   padding-left: 20%;
+  padding-top: 3rem;
 }
 
 #One-stop .container .half1 .half1-text p {
   font-size: 1.5rem;
-  line-height: 3vh;
+  line-height: 4vh;
   text-align: start;
   padding-left: 20%;
   letter-spacing: 4px;

@@ -1,5 +1,9 @@
 <%- include ("../partials/header") %>
 
+<a id="back-top" href="#">
+    <i class="fas fa-angle-up"></i>
+</a>
+
 <section id="contact-page">
     <div class="container">
         <div class="contact-pic">
@@ -24,22 +28,22 @@
         LEAVE US A MESSAGE!</h1>
         <form method="POST" action="/contact/formhandler">
             <!-- <label for="Firstname"></label> -->
-            <input id="Firstname" name="Firstname"class="form-inp one" type="text" placeholder="Firstname">
+            <input id="Firstname" name="Firstname"class="form-inp one" type="text" placeholder="Firstname" autocomplete="off">
             </br>
             <!-- <label for="Lastname"></label> -->
-            <input id="Lastname" name="Lastname" class="form-inp two" type="text" placeholder="Lastname">
+            <input id="Lastname" name="Lastname" class="form-inp two" type="text" placeholder="Lastname" autocomplete="off">
             </br>
             <!-- <label for="Email"></label> -->
-            <input id="Email" name="Email" class="form-inp three"type="email" placeholder="Email">
+            <input id="Email" name="Email" class="form-inp three"type="email" placeholder="Email" autocomplete="off">
             </br>
             <!-- <label for="Tel"></label> -->
-            <input id="Tel" name="Tel" class="form-inp four" type="tel" placeholder="Tel" maxlength="15">
+            <input id="Tel" name="Tel" class="form-inp four" type="tel" placeholder="Tel" maxlength="15" autocomplete="off">
             </br>
             <!-- <label for="Address"></label> -->
-            <input id="Address" name="Address" class="form-inp five" type="text" placeholder="Address" maxlength="50">
+            <input id="Address" name="Address" class="form-inp five" type="text" placeholder="Address" maxlength="50" autocomplete="off">
             </br>
             <!-- <label for="DesignReq"></label> -->
-            <textarea id="DesignReq" name="DesignReq" class="form-inp six" placeholder="Design Requirement" maxlength="500"></textarea>
+            <textarea id="DesignReq" name="DesignReq" class="form-inp six" placeholder="Design Requirement" maxlength="500" autocomplete="off"></textarea>
             </br>
             <button type="submit">Submit</button>
         </form>

@@ -10,22 +10,23 @@
   position: fixed;
   bottom: 30px;
   right: 30px;
-  // transition: background-color 0.3s;
-  // opacity: 0.5s, visibility 0.5s;
-  // opacity: 0;
+  transition: all 0.4s;
+  opacity: 0;
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  &:hover{
+    background-color: rgba(0, 0, 0, 1);
+  }
   i {
     font-size: 32px;
     color: #48a4a4;
   }
 }
 
-.showBtn {
-  a {
-    // background: rgba(255, 255, 255, 0.8);
-    background-color: rgba(0, 0, 0, 1);
-  }
+#back-top.showBtn {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 section.homePage1 {
@@ -88,6 +89,7 @@ section.homePage1 {
 
 section.aboutUs {
   display: flex;
+  width: 100%;
 
   .aboutContent {
     // display: flex;
@@ -211,18 +213,18 @@ section#servicePage {
       height: 40vh;
       position: relative;
       top: 3rem;
-      left: 2rem;
       .half1-text {
         width: 50%;
         height: 100%;
         h1 {
           font-size: 3rem;
-          padding-bottom: 3rem;
+          padding-bottom: 2rem;
           padding-left: 20%;
+          padding-top: 3rem;
         }
         p {
           font-size: 1.5rem;
-          line-height: 3vh;
+          line-height: 4vh;
           text-align: start;
           padding-left: 20%;
           letter-spacing: 4px;
