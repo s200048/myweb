@@ -47,29 +47,38 @@
   font-size: 3rem;
 }
 
-#contact-form .container-form form input, #contact-form .container-form form textarea {
+#contact-form .container-form form input,
+#contact-form .container-form form textarea {
   width: 40%;
   margin-top: 1.5rem;
   padding: 0.5rem;
 }
 
-#contact-form .container-form form input::-webkit-input-placeholder, #contact-form .container-form form textarea::-webkit-input-placeholder {
+#contact-form .container-form form input::-webkit-input-placeholder,
+#contact-form .container-form form textarea::-webkit-input-placeholder {
   font-weight: bold;
 }
 
-#contact-form .container-form form input:-ms-input-placeholder, #contact-form .container-form form textarea:-ms-input-placeholder {
+#contact-form .container-form form input:-ms-input-placeholder,
+#contact-form .container-form form textarea:-ms-input-placeholder {
   font-weight: bold;
 }
 
-#contact-form .container-form form input::-ms-input-placeholder, #contact-form .container-form form textarea::-ms-input-placeholder {
+#contact-form .container-form form input::-ms-input-placeholder,
+#contact-form .container-form form textarea::-ms-input-placeholder {
   font-weight: bold;
 }
 
-#contact-form .container-form form input::placeholder, #contact-form .container-form form textarea::placeholder {
+#contact-form .container-form form input::placeholder,
+#contact-form .container-form form textarea::placeholder {
   font-weight: bold;
 }
 
-#contact-form .container-form form .one, #contact-form .container-form form .two, #contact-form .container-form form .three, #contact-form .container-form form .four, #contact-form .container-form form .five {
+#contact-form .container-form form .one,
+#contact-form .container-form form .two,
+#contact-form .container-form form .three,
+#contact-form .container-form form .four,
+#contact-form .container-form form .five {
   height: 30px;
 }
 

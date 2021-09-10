@@ -7,6 +7,10 @@
   list-style-type: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @import "./header/header.scss";
 
 @import "./firstpage/firstpage.scss";
@@ -16,5 +20,7 @@
 @import "./case/case.scss";
 
 @import "./contact/contact.scss";
+
+@import "./contact/formhandler.scss";
 
 @import "./footer/footer.scss";

@@ -1,72 +1,77 @@
-#contact-page{
-    height: 90vh;
-    .container {
-        display: flex;
-        .contact-text{
-            text-align: center;
-            width: 50%;
-            padding: 5rem;
-            h1{
-                font-size: 3rem;
-                padding: 3rem;
-                margin-bottom: 2.5rem;
-            }
-            p{
-                font-size: 1.5rem;
-                padding: 3rem;
-            }
-        }
-        .contact-pic{
-            width: 50%;
-            height: 90vh;
-            background: url(../../images/contactPage/pexels-daria-shevtsova-892618.jpg);
-            background-size: cover;
-            background-position: center;
-        }
+#contact-page {
+  height: 90vh;
+  .container {
+    display: flex;
+    .contact-text {
+      text-align: center;
+      width: 50%;
+      padding: 5rem;
+      h1 {
+        font-size: 3rem;
+        padding: 3rem;
+        margin-bottom: 2.5rem;
+      }
+      p {
+        font-size: 1.5rem;
+        padding: 3rem;
+      }
     }
+    .contact-pic {
+      width: 50%;
+      height: 90vh;
+      background: url(../../images/contactPage/pexels-daria-shevtsova-892618.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+  }
 }
 
-#contact-form{
-    height: 100vh;
-    .container-form{
-        text-align: center;
-        padding: 0 3rem;
-        h1{
-            padding: 10rem 0 3rem 0;
-            font-size: 3rem;
-        }
-        form {
-            input, textarea{
-                width: 40%;
-                margin-top: 1.5rem;
-                padding: 0.5rem;
-                &::placeholder{
-                    font-weight: bold;
-                }
-            }
-            .one, .two, .three, .four, .five{
-                height: 30px;
-            }
-            .six{
-                height: 100px;
-            }
-            button{
-                width: 10%;
-                border: solid 1px;
-                color: black;
-                background: white;
-                padding: 0.5rem 1.5rem;
-                margin-top: 1.5rem;
-                transition: 0.5s ease-in;
-                opacity: 0.4;
-                cursor: pointer;
-                &:hover {
-                    opacity: 1;
-                    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
-                    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
-                    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-                }
-            }
-        }
+#contact-form {
+  height: 100vh;
+  .container-form {
+    text-align: center;
+    padding: 0 3rem;
+    h1 {
+      padding: 10rem 0 3rem 0;
+      font-size: 3rem;
     }
+    form {
+      input,
+      textarea {
+        width: 40%;
+        margin-top: 1.5rem;
+        padding: 0.5rem;
+        &::placeholder {
+          font-weight: bold;
+        }
+      }
+      .one,
+      .two,
+      .three,
+      .four,
+      .five {
+        height: 30px;
+      }
+      .six {
+        height: 100px;
+      }
+      button {
+        width: 10%;
+        border: solid 1px;
+        color: black;
+        background: white;
+        padding: 0.5rem 1.5rem;
+        margin-top: 1.5rem;
+        transition: 0.5s ease-in;
+        opacity: 0.4;
+        cursor: pointer;
+        &:hover {
+          opacity: 1;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+            rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+            rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+        }
+      }
+    }
+  }
 }

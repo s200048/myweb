@@ -22,18 +22,24 @@
         <h1>LOOKING FOR INTERIOR SEDIGN SERVICE?
         </br>
         LEAVE US A MESSAGE!</h1>
-        <form method="POST" action="contact">
-            <input class="form-inp one" type="text" placeholder="Firstname">
+        <form method="POST" action="/contact/formhandler">
+            <!-- <label for="Firstname"></label> -->
+            <input id="Firstname" name="Firstname"class="form-inp one" type="text" placeholder="Firstname">
             </br>
-            <input class="form-inp two" type="text" placeholder="Lastname">
+            <!-- <label for="Lastname"></label> -->
+            <input id="Lastname" name="Lastname" class="form-inp two" type="text" placeholder="Lastname">
             </br>
-            <input class="form-inp three"type="email" placeholder="Email">
+            <!-- <label for="Email"></label> -->
+            <input id="Email" name="Email" class="form-inp three"type="email" placeholder="Email">
             </br>
-            <input class="form-inp four" type="tel" placeholder="Tel" maxlength="15">
+            <!-- <label for="Tel"></label> -->
+            <input id="Tel" name="Tel" class="form-inp four" type="tel" placeholder="Tel" maxlength="15">
             </br>
-            <input class="form-inp five" type="text" placeholder="Address" maxlength="50">
+            <!-- <label for="Address"></label> -->
+            <input id="Address" name="Address" class="form-inp five" type="text" placeholder="Address" maxlength="50">
             </br>
-            <textarea class="form-inp six" placeholder="Design Requirement" maxlength="500"></textarea>
+            <!-- <label for="DesignReq"></label> -->
+            <textarea id="DesignReq" name="DesignReq" class="form-inp six" placeholder="Design Requirement" maxlength="500"></textarea>
             </br>
             <button type="submit">Submit</button>
         </form>
