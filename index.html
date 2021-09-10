@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/bec30509e3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <a id="back-top" href="#">
+    <a id="back-top"  href="#">
         <i class="fas fa-angle-up"></i>
     </a>
 </body>
@@ -19,9 +19,9 @@
     addEventListener("scroll", () => {
         // console.log(window.pageYOffset);
     if (window.pageYOffset > 300) {
-        btn.classList.remove("showBtn");
-    } else {
         btn.classList.add("showBtn");
+    } else {
+        btn.classList.remove("showBtn");
     }
 });
 </script>

@@ -19,9 +19,14 @@
   font-size: 32px;
   color: #48a4a4;
 }
-.showBtn a {
-  z-index: 1;
+
+a.showBtn {
+  border-radius: 3rem;
   opacity: 1;
+}
+
+a.showBtn i {
+  color: white;
 }
 
 body {
