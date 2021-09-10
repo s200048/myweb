@@ -1,4 +1,27 @@
 /* First Page */
+#back-top {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#back-top i {
+  font-size: 32px;
+  color: #48a4a4;
+}
+
+.showBtn a {
+  background-color: black;
+}
+
 section.homePage1 {
   position: relative;
   /* flex-direction: column;

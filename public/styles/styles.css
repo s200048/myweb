@@ -36,7 +36,7 @@ header div.logo {
 
 header div.logo p {
   font-size: 2rem;
-  color: #48A4A4;
+  color: #48a4a4;
   font-weight: bold;
 }
 
@@ -55,7 +55,7 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  color: #48A4A4;
+  color: #48a4a4;
   font-size: 1.5rem;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
@@ -78,10 +78,33 @@ header nav ul li a:hover {
 }
 
 .dynamicHeader a:hover {
-  color: #48A4A4;
+  color: #48a4a4;
 }
 
 /* First Page */
+#back-top {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#back-top i {
+  font-size: 32px;
+  color: #48a4a4;
+}
+
+.showBtn a {
+  background-color: black;
+}
+
 section.homePage1 {
   position: relative;
   /* flex-direction: column;

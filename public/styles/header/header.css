@@ -22,7 +22,7 @@ header div.logo {
 
 header div.logo p {
   font-size: 2rem;
-  color: #48A4A4;
+  color: #48a4a4;
   font-weight: bold;
 }
 
@@ -41,7 +41,7 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  color: #48A4A4;
+  color: #48a4a4;
   font-size: 1.5rem;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
@@ -64,6 +64,6 @@ header nav ul li a:hover {
 }
 
 .dynamicHeader a:hover {
-  color: #48A4A4;
+  color: #48a4a4;
 }
 /*# sourceMappingURL=header.css.map */

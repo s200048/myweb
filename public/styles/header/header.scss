@@ -1,57 +1,57 @@
 /* header */
 header {
-    display: flex;
-    align-items: center;
-    height: 10vh;
-    padding: 0.5rem 1.5rem;
-    position: sticky;
-    // top: 0;
-    // left: 0;
-    // z-index: 3;
-    transition: all 0.3s ease-in;
-    & div.logo {
-        flex-grow: 6;
-        & p{
-            font-size: 2rem;
-            color: #48A4A4;
-            font-weight: bold;
-        }
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  padding: 0.5rem 1.5rem;
+  position: sticky;
+  // top: 0;
+  // left: 0;
+  // z-index: 3;
+  transition: all 0.3s ease-in;
+  & div.logo {
+    flex-grow: 6;
+    & p {
+      font-size: 2rem;
+      color: #48a4a4;
+      font-weight: bold;
     }
+  }
 
-    & nav {
-        // flex-grow: 4;
+  & nav {
+    // flex-grow: 4;
 
-        ul {
-            display: flex;
-            /* align-items: flex-start; */
-            /* justify-content: space-around; */
-            & li {
-                list-style-type: none;
-                padding: 0rem 2.2rem;
-                & a {
-                    text-decoration: none;
-                    color: #48A4A4;
-                    font-size: 1.5rem;
-                    transition: 0.5s ease-in-out;
-                    &:hover {
-                        color: black;
-                    }
-                }
-            }
+    ul {
+      display: flex;
+      /* align-items: flex-start; */
+      /* justify-content: space-around; */
+      & li {
+        list-style-type: none;
+        padding: 0rem 2.2rem;
+        & a {
+          text-decoration: none;
+          color: #48a4a4;
+          font-size: 1.5rem;
+          transition: 0.5s ease-in-out;
+          &:hover {
+            color: black;
+          }
         }
+      }
     }
+  }
 }
 
-.dynamicHeader{
-    background-color: rgba(0, 0, 0, 0.8);
+.dynamicHeader {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  a {
     color: white;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    a{
-        color: white;
-        &:hover{
-            color: #48A4A4;
-        }
+    &:hover {
+      color: #48a4a4;
     }
+  }
 }

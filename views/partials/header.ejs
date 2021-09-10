@@ -32,15 +32,30 @@
     
 </body>
 <script>
-    let header = document.querySelector("header");
+    document.addEventListener("DOMContentLoaded", function(){
+        let header = document.querySelector("header");
 
-    addEventListener("scroll", () => {
-    //console.log(window.pageYOffset);
-    if (window.pageYOffset === 0) {
-        header.classList.remove("dynamicHeader");
-    } else {
-        header.classList.add("dynamicHeader"); 
-    }
+        addEventListener("scroll", () => {
+        //console.log(window.pageYOffset);
+            if (window.pageYOffset === 0) {
+                header.classList.remove("dynamicHeader");
+            } else {
+                header.classList.add("dynamicHeader");
+            }
+        });
+
+        let btn = document.getElementById("back-top");
+
+        addEventListener("scroll", () => {
+            console.log(window.pageYOffset);
+            if (window.pageYOffset > 100) {
+                btn.classList.add("showBtn");
+            } else {
+                btn.classList.remove("showBtn");
+            }
+        });
     });
+    
+
 </script>
 </html>

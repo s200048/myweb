@@ -1,4 +1,33 @@
 /* First Page */
+
+#back-top {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  // transition: background-color 0.3s;
+  // opacity: 0.5s, visibility 0.5s;
+  // opacity: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.1);
+  i {
+    font-size: 32px;
+    color: #48a4a4;
+  }
+}
+
+.showBtn {
+  a {
+    // background: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 1);
+  }
+}
+
 section.homePage1 {
   position: relative;
   // display: flex;
