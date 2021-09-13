@@ -104,4 +104,69 @@
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
           box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
+
+@media screen and (max-width: 800px) {
+  #contact-page {
+    height: 50vh;
+  }
+  #contact-page .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact-page .container .contact-text {
+    width: 100%;
+  }
+  #contact-page .container .contact-text h1 {
+    font-size: 1.5rem;
+  }
+  #contact-page .container .contact-text p {
+    font-size: 1rem;
+  }
+  #contact-page .container .contact-pic {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #back-top {
+    width: 30px;
+    height: 30px;
+  }
+  #back-top i {
+    font-size: 24px;
+    position: absolute;
+    top: 5px;
+    right: 7px;
+  }
+  #contact-page .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact-page .container .contact-text {
+    padding: 0rem;
+    text-align: left;
+  }
+  #contact-page .container .contact-text h1 {
+    text-align: center;
+    padding: 4rem 0 1.5rem 0;
+    margin-bottom: 0;
+  }
+  #contact-page .container .contact-text p {
+    padding: 0rem;
+  }
+  #contact-form .container-form h1 {
+    padding: 0;
+    font-size: 1rem;
+  }
+  #contact-form .container-form form .form-inp {
+    width: 70vw;
+  }
+  #contact-form .container-form form button {
+    width: 50%;
+  }
+}
 /*# sourceMappingURL=contact.css.map */

@@ -37,3 +37,36 @@
     background-size: cover;
   }
 }
+
+@media screen and (max-width: 800px){
+  #aboutMore{
+    flex-direction: column;
+    #aboutMoreText {
+      width: 100%;
+      padding: 0rem;
+      h1{
+        font-size: 1.5rem;
+        padding-top: 2rem;
+        margin: 2rem;
+      }
+      .para{
+        line-height: 3vh;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+      }
+      .p1{
+        text-indent: 20px;
+      }
+    }
+    #aboutMorepic{
+      height: 100vh;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #aboutMorepic{
+    display: none;
+  }
+}

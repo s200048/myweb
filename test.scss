@@ -23,7 +23,7 @@ header {
   // left: 0;
   // z-index: 3;
   transition: all 0.3s ease-in;
-  .menu-icons {
+  .menu__toggle {
     color: #eee;
     font-size: 4rem;
     position: absolute;
@@ -42,11 +42,8 @@ header {
   }
 
   nav {
-    // flex-grow: 4;
     ul {
       display: flex;
-      /* align-items: flex-start; */
-      /* justify-content: space-around; */
       & li {
         list-style-type: none;
         padding: 0rem 2.2rem;
@@ -80,29 +77,28 @@ header {
 
 @media screen and (max-width: 780px) {
   header {
-    height: 20vh;
-    flex-direction: column;
-    background: rgb(165, 153, 153);
-    .menu-icons {
+    .menu__toggle {
       display: block;
       font-size: 30px;
-      //   .fa-times {
-      //     display: none;
-      //   }
+      color: black;
     }
-
-    .nav-list {
-      display: none;
+    .nav__menu{
+      position: fixed;
+      background-color: var(--body-color);
+      top: 0;
+      right: -100%;
+      width: 70%;
+      height: 100%;
+      box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+      padding: 3rem;
+      transition: .4s;
+    }
+    .nav__list {
       flex-direction: column;
     }
-    // .active.menu-icons .fa-times {
-    //   display: block;
-    // }
-    // .active.menu-icons .fa-bars {
-    //   display: none;
-    // }
-    // .active nav .nav-list {
-    //   display: flex;
-    // }
   }
+}
+
+.active {
+  right: 0px;
 }

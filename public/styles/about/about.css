@@ -35,4 +35,40 @@
   background-position: center;
   background-size: cover;
 }
+
+@media screen and (max-width: 800px) {
+  #aboutMore {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #aboutMore #aboutMoreText {
+    width: 100%;
+    padding: 0rem;
+  }
+  #aboutMore #aboutMoreText h1 {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    margin: 2rem;
+  }
+  #aboutMore #aboutMoreText .para {
+    line-height: 3vh;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  #aboutMore #aboutMoreText .p1 {
+    text-indent: 20px;
+  }
+  #aboutMore #aboutMorepic {
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #aboutMorepic {
+    display: none;
+  }
+}
 /*# sourceMappingURL=about.css.map */

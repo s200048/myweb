@@ -75,3 +75,71 @@
     }
   }
 }
+
+@media screen and (max-width: 800px){
+  #contact-page{
+    height: 50vh;
+    .container{
+      flex-direction: column;
+      .contact-text{
+        width: 100%;
+        h1{
+          font-size: 1.5rem;
+
+        }
+        p{
+          font-size: 1rem;
+        }
+      }
+      .contact-pic{
+        display: none;
+      }
+    }
+  }
+}  
+
+@media screen and (max-width: 400px) {
+  #back-top{
+    width: 30px;
+    height: 30px;
+    i{
+      font-size: 24px;
+      position: absolute;
+      top: 5px;
+      right: 7px;
+    }
+  }
+
+  #contact-page{
+    .container{
+      flex-direction: column;
+      .contact-text{
+        padding: 0rem;
+        text-align: left;
+      }
+      .contact-text h1 {
+        text-align: center;
+        padding: 4rem 0 1.5rem 0;
+        margin-bottom: 0;
+      }
+      .contact-text p{
+        padding: 0rem;
+      }
+    }
+  }
+
+  #contact-form{
+    .container-form{
+      h1{
+        padding: 0;
+        font-size: 1rem;
+      }
+      form .form-inp{
+        width: 70vw;
+      }
+      form button{
+        width: 50%;
+      }
+    }
+  }
+}

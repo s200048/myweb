@@ -74,4 +74,16 @@
   background-position: center;
   background-size: cover;
 }
+
+@media screen and (max-width: 400px) {
+  #casepage .case-text h1 {
+    font-size: 1.5rem;
+  }
+  #casepage .case-text p {
+    font-size: 0.75rem;
+  }
+  #casepage .case-pic .case p {
+    font-size: 0.75rem;
+  }
+}
 /*# sourceMappingURL=case.css.map */

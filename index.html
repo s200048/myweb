@@ -16,43 +16,29 @@
     <title>Howard Company</title>
 </head>
 <body>
-    <!-- <header>
-        <nav>
-            <div class="menu-icons">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-times"></i>
-            </div>
-            <a href="#" class="logo">HOWARD COMPANY</a>
-            <ul class="nav-list">
-                <li><a class="navAtag" href="/">HOME</a></li>
-                <li><a class="navAtag" href="/about">ABOUT</a></li>
-                <li><a class="navAtag" href="/case">CASE</a></li>
-                <li><a class="navAtag" href="/contact">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header> -->
+    
     <header>
-        <div class="menu-icons">
-            <i class="fas fa-bars"></i>
-            <!-- <i class="fas fa-times"></i> -->
-        </div>
         <a href="#" class="logo">
             HOWARD COMPANY
         </a>
-        <nav>
-            <ul class="nav-list">
+        <nav class="nav__menu" id="nav-menu">
+            <ul class="nav__list" id="nav-list">
                 <li><a class="navAtag" href="/">HOME</a></li>
                 <li><a class="navAtag" href="/about">ABOUT</a></li>
                 <!-- <li><a class="navAtag" href="/service">SERVICE</a></li> -->
                 <li><a class="navAtag" href="/case">CASE</a></li>
                 <li><a class="navAtag" href="/contact">CONTACT</a></li>
             </ul>
+            <!-- <i class="fas fa-times"></i> -->
         </nav>
+        <div class="menu__toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
     
 </body>
 <script>
-    document.addEventListener("DOMContentLoaded", function(){
+    // document.addEventListener("DOMContentLoaded", function(){
         let header = document.querySelector("header");
 
         addEventListener("scroll", () => {
@@ -75,19 +61,23 @@
             }
         });
 
-        let meunBar = document.getElementsByClassName("menu-icons");
-        let navList = document.getElementsByClassName("nav-list");
+        let menuBar = document.getElementById("nav-menu");
+        // let navList = document.getElementsByClassName("nav-list");
+        let menuToggle = document.getElementById("menu-toggle");
 
-        meunBar.addEventListener("Click", () => {
-            if (meunBar.style.display === "block") {
-                navList.style.display = "none";
-            } else {
-                navList.style.display = "block";
-            }
-        })
+        console.log(menuToggle);
+        
+        meunToggle.addEventListener("click", (e) => {
+            console.log(e.target);
+            if(menuToggle){
+                menuBar.classList.add('active');
+            };
+        });
+        
+        
 
 
-    });
+    // });
     
 
 </script>

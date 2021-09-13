@@ -32,7 +32,7 @@ header {
   transition: all 0.3s ease-in;
 }
 
-header .menu-icons {
+header .menu__toggle {
   color: #eee;
   font-size: 4rem;
   position: absolute;
@@ -58,8 +58,6 @@ header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* align-items: flex-start; */
-  /* justify-content: space-around; */
 }
 
 header nav ul li {
@@ -96,24 +94,33 @@ header nav ul li a:hover {
 }
 
 @media screen and (max-width: 780px) {
-  header {
-    height: 20vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background: #a59999;
-  }
-  header .menu-icons {
+  header .menu__toggle {
     display: block;
     font-size: 30px;
+    color: black;
   }
-  header .nav-list {
-    display: none;
+  header .nav__menu {
+    position: fixed;
+    background-color: var(--body-color);
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    -webkit-box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+            box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+    padding: 3rem;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  header .nav__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.active {
+  right: 0px;
 }
 /*# sourceMappingURL=test.css.map */

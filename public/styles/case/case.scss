@@ -106,3 +106,23 @@
     }
   }
 }
+
+@media screen and (max-width:400px) {
+  #casepage{
+    .case-text{
+      h1{
+        font-size: 1.5rem;
+      }
+      p{
+        font-size: 0.75rem;
+      }
+    }
+    .case-pic{
+      .case{
+        p{
+          font-size: 0.75rem;
+        } 
+      } 
+    }
+  }
+}

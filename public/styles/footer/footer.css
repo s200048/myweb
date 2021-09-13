@@ -73,4 +73,54 @@ footer p {
   text-align: center;
   font-size: 1rem;
 }
+
+@media screen and (max-width: 780px) {
+  footer {
+    height: 20vh;
+  }
+  footer h1 {
+    font-size: 1rem;
+    margin-bottom: 0px;
+  }
+  footer ul {
+    margin-bottom: 0;
+  }
+  footer .header-list li {
+    padding: 1rem 1rem;
+  }
+  footer .header-list li a {
+    color: #48A4A4;
+    font-size: 1rem;
+  }
+  footer .hearder-pic li {
+    padding: 0rem;
+  }
+  footer .hearder-pic li a i {
+    font-size: 1rem;
+    padding: 0rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  footer {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 20vh;
+  }
+  footer ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  footer .header-list li {
+    padding: 0px 5px;
+  }
+  footer .hearder-pic li a {
+    padding: 0rem;
+  }
+  footer p {
+    font-size: 0.5rem;
+  }
+}
 /*# sourceMappingURL=footer.css.map */

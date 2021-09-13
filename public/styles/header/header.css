@@ -66,4 +66,27 @@ header nav ul li a:hover {
 .dynamicHeader a:hover {
   color: #48a4a4;
 }
+
+@media screen and (max-width: 780px) {
+  header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 1rem;
+  }
+  header nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 324px) {
+  header div.logo p {
+    font-size: 1.5rem;
+  }
+}
 /*# sourceMappingURL=header.css.map */

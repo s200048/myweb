@@ -58,6 +58,26 @@ header {
 
 @media screen and (max-width: 780px) {
   header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    flex-direction: column;
     font-size: 1rem;
+    nav{
+      display: none;
+    }
+    // ul{
+    //   flex-direction: column;
+    //   text-align: center;
+    // }
+  }
+}
+
+@media screen and (max-width: 324px){
+  header{
+    & div.logo p{
+      font-size: 1.5rem;
+    }
   }
 }
