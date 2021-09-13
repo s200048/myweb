@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./test.css" rel="stylesheet">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" type="x-icon" href="/images/icon/HW.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/bec30509e3.js" crossorigin="anonymous"></script>
+    <title>Howard Company</title>
+</head>
+<body>
+    <!-- <header>
+        <nav>
+            <div class="menu-icons">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <a href="#" class="logo">HOWARD COMPANY</a>
+            <ul class="nav-list">
+                <li><a class="navAtag" href="/">HOME</a></li>
+                <li><a class="navAtag" href="/about">ABOUT</a></li>
+                <li><a class="navAtag" href="/case">CASE</a></li>
+                <li><a class="navAtag" href="/contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <header>
+        <div class="menu-icons">
+            <i class="fas fa-bars"></i>
+            <!-- <i class="fas fa-times"></i> -->
+        </div>
+        <a href="#" class="logo">
+            HOWARD COMPANY
+        </a>
+        <nav>
+            <ul class="nav-list">
+                <li><a class="navAtag" href="/">HOME</a></li>
+                <li><a class="navAtag" href="/about">ABOUT</a></li>
+                <!-- <li><a class="navAtag" href="/service">SERVICE</a></li> -->
+                <li><a class="navAtag" href="/case">CASE</a></li>
+                <li><a class="navAtag" href="/contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+        let header = document.querySelector("header");
+
+        addEventListener("scroll", () => {
+        //console.log(window.pageYOffset);
+            if (window.pageYOffset === 0) {
+                header.classList.remove("dynamicHeader");
+            } else {
+                header.classList.add("dynamicHeader");
+            }
+        });
+
+        let btn = document.getElementById("back-top");
+
+        addEventListener("scroll", () => {
+            // console.log(window.pageYOffset);
+            if (window.pageYOffset > 99) {
+                btn.classList.add("showBtn");
+            } else {
+                btn.classList.remove("showBtn");
+            }
+        });
+
+        let meunBar = document.getElementsByClassName("menu-icons");
+        let navList = document.getElementsByClassName("nav-list");
+
+        meunBar.addEventListener("Click", () => {
+            if (meunBar.style.display === "block") {
+                navList.style.display = "none";
+            } else {
+                navList.style.display = "block";
+            }
+        })
+
+
+    });
+    
+
+</script>
+</html>

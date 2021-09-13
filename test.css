@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans HK", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  height: 180vh;
+}
+
+/* header */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  padding: 0.5rem 1.5rem;
+  position: -webkit-sticky;
+  position: sticky;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+header .menu-icons {
+  color: #eee;
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 50;
+  display: none;
+}
+
+header .logo {
+  -webkit-box-flex: 6;
+      -ms-flex-positive: 6;
+          flex-grow: 6;
+  font-size: 2rem;
+  color: #48a4a4;
+  font-weight: bold;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* align-items: flex-start; */
+  /* justify-content: space-around; */
+}
+
+header nav ul li {
+  list-style-type: none;
+  padding: 0rem 2.2rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #48a4a4;
+  font-size: 1.5rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+header nav ul li a:hover {
+  color: black;
+}
+
+.dynamicHeader {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.dynamicHeader a {
+  color: white;
+}
+
+.dynamicHeader a:hover {
+  color: #48a4a4;
+}
+
+@media screen and (max-width: 780px) {
+  header {
+    height: 20vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #a59999;
+  }
+  header .menu-icons {
+    display: block;
+    font-size: 30px;
+  }
+  header .nav-list {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=test.css.map */
