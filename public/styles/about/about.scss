@@ -66,7 +66,14 @@
 }
 
 @media screen and (max-width: 350px) {
-  #aboutMorepic{
-    display: none;
+  #aboutMore{
+    #aboutMorepic{
+      display: none;
+    }
+    #aboutMoreText{
+      .para{
+        font-size: 0.75rem;
+      }
+    }
   }
 }

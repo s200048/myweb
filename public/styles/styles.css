@@ -30,34 +30,33 @@ header {
   position: sticky;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
+  z-index: 10;
+  background: white;
 }
 
-header div.logo {
+header .logo {
   -webkit-box-flex: 6;
       -ms-flex-positive: 6;
           flex-grow: 6;
-}
-
-header div.logo p {
   font-size: 2rem;
   color: #48a4a4;
   font-weight: bold;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
-header nav ul {
+header .nav__menu .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* align-items: flex-start; */
-  /* justify-content: space-around; */
 }
 
-header nav ul li {
+header .nav__menu .nav__list li {
   list-style-type: none;
   padding: 0rem 2.2rem;
 }
 
-header nav ul li a {
+header .nav__menu .nav__list li a {
   text-decoration: none;
   color: #48a4a4;
   font-size: 1.5rem;
@@ -65,8 +64,26 @@ header nav ul li a {
   transition: 0.5s ease-in-out;
 }
 
-header nav ul li a:hover {
+header .nav__menu .nav__list li a:hover {
   color: black;
+}
+
+header .nav__menu .fa-times {
+  display: none;
+  z-index: 20;
+}
+
+header .menu__toggle {
+  color: #eee;
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+  display: none;
 }
 
 .dynamicHeader {
@@ -77,34 +94,79 @@ header nav ul li a:hover {
   z-index: 3;
 }
 
-.dynamicHeader a {
-  color: white;
-}
-
-.dynamicHeader a:hover {
+.dynamicHeader .logo, .dynamicHeader .nav__menu .nav__list a {
   color: #48a4a4;
 }
 
-@media screen and (max-width: 780px) {
+.dynamicHeader .logo:hover, .dynamicHeader .nav__menu .nav__list a:hover {
+  color: white;
+}
+
+.dynamicHeader .menu__toggle {
+  color: white;
+}
+
+@media screen and (max-width: 810px) {
   header {
     width: 100%;
     position: fixed;
     top: 0;
     height: 10vh;
+    font-size: 1rem;
+  }
+  header .menu__toggle {
+    display: block;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+  }
+  header .nav__menu {
+    z-index: 13;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 40%;
+    height: 100%;
+    -webkit-box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+            box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+    padding: 3rem 0rem;
+    -webkit-transition: .4s;
+    transition: .4s;
+    background: black;
+  }
+  header .nav__menu .nav__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    font-size: 1rem;
   }
-  header nav {
-    display: none;
+  header .nav__menu .nav__list li {
+    padding: 3rem 2rem;
+  }
+  header .nav__menu .fa-times {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 3vh;
+    right: 7vw;
+    font-size: 2rem;
+    cursor: pointer;
   }
 }
 
-@media screen and (max-width: 324px) {
-  header div.logo p {
+#nav-menu.active {
+  right: 0px;
+}
+
+@media screen and (max-width: 400px) {
+  header .logo, header .menu__toggle {
     font-size: 1.5rem;
+  }
+  header .nav__menu .nav__list li {
+    padding: 2rem 2rem;
+  }
+  header .nav__menu .nav__list li a {
+    font-size: 1rem;
   }
 }
 
@@ -166,7 +228,7 @@ section.homePage1 div.firstBackgoundPic {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: 0;
+  z-index: 1;
 }
 
 section.homePage1 div.firstBackgoundPic p {
@@ -215,6 +277,10 @@ section.aboutUs {
   width: 100%;
 }
 
+section.aboutUs .aboutContent {
+  text-align: center;
+}
+
 section.aboutUs .aboutContent h1 {
   font-size: 3rem;
   font-weight: bold;
@@ -222,13 +288,12 @@ section.aboutUs .aboutContent h1 {
 }
 
 section.aboutUs .aboutContent a {
+  display: inline-block;
   border: solid 1px;
   padding: 1rem 1.5rem;
   font-size: 1rem;
   text-decoration: none;
   color: black;
-  display: block;
-  margin: 0.5% 33%;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
   opacity: 0.4;
@@ -261,7 +326,7 @@ section.aboutUs .imgContent .aboutimg2 {
   height: 50vh;
 }
 
-section#servicePage {
+#servicePage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,17 +337,17 @@ section#servicePage {
   padding: 2rem;
 }
 
-section#servicePage .serviceText h1,
-section#servicePage .serviceText p {
+#servicePage .serviceText h1,
+#servicePage .serviceText p {
   text-align: center;
 }
 
-section#servicePage .serviceText h1 {
+#servicePage .serviceText h1 {
   font-size: 3rem;
   margin-top: 3rem;
 }
 
-section#servicePage .serviceText p {
+#servicePage .serviceText p {
   font-size: 1.5rem;
   margin: 3rem 3rem 1.25rem 3rem;
   line-height: 5vh;
@@ -290,7 +355,7 @@ section#servicePage .serviceText p {
   letter-spacing: 4px;
 }
 
-section#servicePage .graphicPic {
+#servicePage .graphicPic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,7 +364,7 @@ section#servicePage .graphicPic {
           justify-content: center;
 }
 
-section#servicePage .graphicPic ul {
+#servicePage .graphicPic ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,17 +379,17 @@ section#servicePage .graphicPic ul {
   text-align: center;
 }
 
-section#servicePage .graphicPic ul li {
+#servicePage .graphicPic ul li {
   margin: 3rem 4rem;
   padding: 3rem 4rem;
 }
 
-section#servicePage .graphicPic ul li i {
+#servicePage .graphicPic ul li i {
   font-size: 4.5rem;
   margin-bottom: 2rem;
 }
 
-section#servicePage .graphicPic ul li p {
+#servicePage .graphicPic ul li p {
   font-size: 2rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1ebea), to(#272538));
   background: linear-gradient(to bottom, #f1ebea 0%, #272538 100%);
@@ -414,6 +479,191 @@ section#servicePage .graphicPic ul li p {
   background-size: cover;
 }
 
+@media screen and (max-width: 1570px) {
+  #about-us .aboutContent p {
+    line-height: 8vh;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  #about-us .aboutContent h1 {
+    font-size: 2rem;
+  }
+  #about-us .aboutContent p {
+    font-size: 1.25rem;
+    line-height: 5vh;
+    padding: 0rem 2rem 4rem 2rem;
+  }
+  #about-us .aboutContent a {
+    padding: 0.5rem 1rem;
+  }
+  #about-us .imgContent {
+    width: 50%;
+  }
+  #about-us .imgContent img {
+    height: 50%;
+  }
+  #servicePage .graphicPic {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+  }
+  #servicePage .graphicPic ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #servicePage .graphicPic ul li {
+    margin: 0px;
+    padding: 3rem 2rem;
+  }
+  #servicePage .graphicPic ul li .fas {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  #servicePage .graphicPic ul li p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #home-page .firstBackgoundPic p {
+    font-size: 1.5rem;
+  }
+  #home-page .firstBackgoundPic a {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+  #about-us .aboutContent h1 {
+    font-size: 1.5rem;
+  }
+  #about-us .aboutContent p {
+    font-size: 0.75rem;
+    line-height: 5vh;
+    padding: 0rem 2rem 2rem 2rem;
+  }
+  #about-us .aboutContent a {
+    padding: 0.5rem 1rem;
+  }
+  #about-us .imgContent {
+    width: 50%;
+  }
+  #about-us .imgContent img {
+    height: 50%;
+  }
+  #servicePage .serviceText h1 {
+    font-size: 2rem;
+  }
+  #servicePage .serviceText p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  #servicePage .graphicPic {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+  }
+  #servicePage .graphicPic ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #servicePage .graphicPic ul li {
+    margin: 0px;
+    padding: 3rem 2rem;
+  }
+  #servicePage .graphicPic ul li .fas {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  #servicePage .graphicPic ul li p {
+    font-size: 1.5rem;
+  }
+  #One-stop {
+    height: 190vh;
+  }
+  #One-stop .container .half1 .half1-text h1, #One-stop .container .half1 .half1-text p {
+    padding-left: 10%;
+  }
+  #One-stop .container .half1 .half1-text h1 {
+    font-size: 1.5rem;
+  }
+  #One-stop .container .half1 .half1-text p {
+    font-size: 1rem;
+    line-height: 2vh;
+  }
+  #One-stop .container .half1 .half1-pic {
+    width: 30%;
+    height: 25vh;
+    top: 5vh;
+  }
+  #One-stop .container .half2 {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #One-stop .container .half2 ul {
+    padding: 3rem 3rem 0 3rem;
+  }
+  #One-stop .container .half2 ul .half22 {
+    width: 100%;
+  }
+  #One-stop .container .half2 ul p {
+    font-size: 1rem;
+    padding: 2vh 0rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #about-us .imgContent {
+    display: none;
+  }
+  #servicePage .serviceText h1 {
+    font-size: 2rem;
+  }
+  #servicePage .serviceText p {
+    font-size: 0.75rem;
+    margin: 3rem 2rem 1.25rem 2rem;
+  }
+  #servicePage .graphicPic ul li {
+    padding: 2rem 1rem;
+  }
+  #servicePage .graphicPic ul li .fas {
+    font-size: 2rem;
+  }
+  #servicePage .graphicPic ul li p {
+    font-size: 1rem;
+  }
+  #One-stop {
+    height: 200vh;
+  }
+  #One-stop .container .half1 {
+    height: 50vh;
+  }
+  #One-stop .container .half1 .half1-text {
+    width: 100%;
+  }
+  #One-stop .container .half1 .half1-text h1, #One-stop .container .half1 .half1-text p {
+    padding-left: 10%;
+  }
+  #One-stop .container .half1 .half1-text h1 {
+    font-size: 1.5rem;
+  }
+  #One-stop .container .half1 .half1-text p {
+    font-size: 0.75rem;
+    line-height: 2vh;
+  }
+  #One-stop .container .half1 .half1-pic {
+    display: none;
+  }
+}
+
 /* section.homePage1 div.firstBackgoundPic {
 
 } */
@@ -490,8 +740,11 @@ section#servicePage .graphicPic ul li p {
 }
 
 @media screen and (max-width: 350px) {
-  #aboutMorepic {
+  #aboutMore #aboutMorepic {
     display: none;
+  }
+  #aboutMore #aboutMoreText .para {
+    font-size: 0.75rem;
   }
 }
 
@@ -526,6 +779,7 @@ section#servicePage .graphicPic ul li p {
   height: 35vh;
   margin-bottom: 8rem;
   position: relative;
+  z-index: -1;
 }
 
 #casepage .case-pic .case p {
@@ -570,6 +824,39 @@ section#servicePage .graphicPic ul li p {
   background: url(../../images/casePage/210717_think_0.jpg);
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (max-width: 800px) {
+  #casepage {
+    height: 140vh;
+  }
+  #casepage .case-text h1 {
+    margin-top: 4rem;
+    font-size: 2rem;
+  }
+  #casepage .case-pic {
+    height: 130vh;
+    padding: 2rem;
+  }
+  #casepage .case-pic .case {
+    height: 20vh;
+    margin-bottom: 5rem;
+  }
+  #casepage .case-pic .case p {
+    font-size: 0.75rem;
+    bottom: -3vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #casepage {
+    height: 180vh;
+  }
+  #casepage .case-pic {
+    height: 250vh;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -693,7 +980,7 @@ section#servicePage .graphicPic ul li p {
 
 @media screen and (max-width: 800px) {
   #contact-page {
-    height: 50vh;
+    height: 70vh;
   }
   #contact-page .container {
     -webkit-box-orient: vertical;
@@ -706,12 +993,27 @@ section#servicePage .graphicPic ul li p {
   }
   #contact-page .container .contact-text h1 {
     font-size: 1.5rem;
+    margin-bottom: 0;
   }
   #contact-page .container .contact-text p {
     font-size: 1rem;
+    padding: 1rem;
   }
   #contact-page .container .contact-pic {
     display: none;
+  }
+  #contact-form {
+    height: 110vh;
+  }
+  #contact-form .container-form h1 {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+  #contact-form .container-form form .form-inp {
+    width: 70vw;
+  }
+  #contact-form .container-form form button {
+    width: 50%;
   }
 }
 
@@ -726,6 +1028,9 @@ section#servicePage .graphicPic ul li p {
     top: 5px;
     right: 7px;
   }
+  #contact-page {
+    height: 50vh;
+  }
   #contact-page .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -734,12 +1039,10 @@ section#servicePage .graphicPic ul li p {
   }
   #contact-page .container .contact-text {
     padding: 0rem;
-    text-align: left;
   }
   #contact-page .container .contact-text h1 {
     text-align: center;
     padding: 4rem 0 1.5rem 0;
-    margin-bottom: 0;
   }
   #contact-page .container .contact-text p {
     padding: 0rem;
@@ -817,6 +1120,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 3;
 }
 
 footer h1 {
@@ -880,6 +1184,9 @@ footer p {
 @media screen and (max-width: 780px) {
   footer {
     height: 20vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
   }
   footer h1 {
     font-size: 1rem;
@@ -909,7 +1216,7 @@ footer p {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    height: 20vh;
+    height: 15vh;
   }
   footer ul {
     -webkit-box-pack: start;

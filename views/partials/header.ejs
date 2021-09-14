@@ -17,28 +17,33 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <p>HOWARD COMPANY</p>
-        </div>
-        <nav>
-            <ul>
+        <a href="#" class="logo">
+            HOWARD COMPANY
+        </a>
+        <nav class="nav__menu" id="nav-menu">
+            <ul class="nav__list" id="nav-list">
                 <li><a class="navAtag" href="/">HOME</a></li>
                 <li><a class="navAtag" href="/about">ABOUT</a></li>
                 <!-- <li><a class="navAtag" href="/service">SERVICE</a></li> -->
                 <li><a class="navAtag" href="/case">CASE</a></li>
                 <li><a class="navAtag" href="/contact">CONTACT</a></li>
             </ul>
+            <i class="fas fa-times" id="closeBtn"></i>
         </nav>
+        <div class="menu__toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
     
     
 </body>
 <script>
     document.addEventListener("DOMContentLoaded", function(){
+
+        //dynamic header
         let header = document.querySelector("header");
 
         addEventListener("scroll", () => {
-        //console.log(window.pageYOffset);
             if (window.pageYOffset === 0) {
                 header.classList.remove("dynamicHeader");
             } else {
@@ -46,16 +51,38 @@
             }
         });
 
+        //back-top button
         let btn = document.getElementById("back-top");
 
         addEventListener("scroll", () => {
-            console.log(window.pageYOffset);
             if (window.pageYOffset > 99) {
                 btn.classList.add("showBtn");
             } else {
                 btn.classList.remove("showBtn");
             }
         });
+
+        //burger-menu
+        let menuBar = document.getElementById("nav-menu");
+        // let navList = document.getElementsByClassName("nav-list");
+        let menuToggle = document.getElementById("menu-toggle");
+        let closeBtn = document.getElementById("closeBtn");
+
+        console.log(menuToggle);
+        
+        menuToggle.addEventListener("click", (e) => {
+            if(menuToggle){
+                menuBar.classList.add('active');
+                // menuToggle.style.display = "none";
+            };
+        });
+
+        closeBtn.addEventListener('click', () => {
+            if(closeBtn){
+                menuBar.classList.remove('active');
+                // menuToggle.style.display = "block";
+            }
+        })
     });
     
 

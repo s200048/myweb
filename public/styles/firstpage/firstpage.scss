@@ -1,5 +1,6 @@
 /* First Page */
 
+//back-top button
 #back-top {
   display: block;
   width: 50px;
@@ -29,6 +30,8 @@
   pointer-events: auto;
 }
 
+
+//First section
 section.homePage1 {
   position: relative;
   // display: flex;
@@ -45,7 +48,7 @@ section.homePage1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    z-index: 0;
+    z-index: 1;
     p {
       color: #235057;
       font-size: 3rem;
@@ -85,6 +88,7 @@ section.homePage1 {
   }
 }
 
+
 // about in homepage
 
 section.aboutUs {
@@ -92,24 +96,20 @@ section.aboutUs {
   width: 100%;
 
   .aboutContent {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // flex-direction: column;
-    // position: relative;
+    text-align: center;
     h1 {
       font-size: 3rem;
       font-weight: bold;
       padding: 3rem;
     }
     a {
+      display: inline-block;
       border: solid 1px;
       padding: 1rem 1.5rem;
       font-size: 1rem;
       text-decoration: none;
       color: black;
-      display: block;
-      margin: 0.5% 33%;
+      // margin: 0.5% 33%;
       transition: 0.5s ease-in;
       opacity: 0.4;
       &:hover {
@@ -150,7 +150,7 @@ section.aboutUs {
 
 // Service in Homepage
 
-section#servicePage {
+#servicePage {
   display: flex;
   flex-direction: column;
   padding: 2rem;
@@ -276,6 +276,229 @@ section#servicePage {
   }
 }
 
+@media screen and (max-width: 1570px) {
+  #about-us{
+    .aboutContent{
+      p{
+        line-height: 8vh;
+      }
+    }  
+  }
+}
+
+@media screen and (max-width: 1350px) {
+
+  #about-us{
+    .aboutContent{
+      h1{
+        font-size: 2rem;
+      }
+      p{
+        font-size: 1.25rem;
+        line-height: 5vh;
+        padding: 0rem 2rem 4rem 2rem;
+      }
+      a{
+        padding: 0.5rem 1rem;
+      }
+    }
+    .imgContent{
+      width: 50%;
+      img{
+        height: 50%;
+      }
+    }
+  }
+
+  #servicePage{
+    .graphicPic{
+      display: grid;
+      grid-template-rows: 200px 200px 200px;
+      ul{
+        flex-direction: row;
+        li{
+          margin: 0px;
+          padding: 3rem 2rem;
+          .fas{
+            font-size: 4rem;
+            margin-bottom: 2rem;
+          }
+          p{
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  #home-page{
+    .firstBackgoundPic{
+      p{
+        font-size: 1.5rem;
+      }
+      a{
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+      }
+    }
+  }
+
+  #about-us{
+    .aboutContent{
+      h1{
+        font-size: 1.5rem;
+      }
+      p{
+        font-size: 0.75rem;
+        line-height: 5vh;
+        padding: 0rem 2rem 2rem 2rem;
+      }
+      a{
+        padding: 0.5rem 1rem;
+      }
+    }
+    .imgContent{
+      width: 50%;
+      img{
+        height: 50%;
+      }
+    }
+  }
+
+  #servicePage{
+    .serviceText{
+      h1{
+        font-size: 2rem;
+      }
+      p{
+        font-size: 1rem;
+        letter-spacing: 1px;
+      }
+    }
+    .graphicPic{
+      display: grid;
+      grid-template-rows: 200px 200px 200px;
+      ul{
+        flex-direction: row;
+        li{
+          margin: 0px;
+          padding: 3rem 2rem;
+          .fas{
+            font-size: 4rem;
+            margin-bottom: 2rem;
+          }
+          p{
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  #One-stop{
+    height: 190vh;
+    .container{
+      .half1{
+        .half1-text{
+          h1, p{
+            padding-left: 10%;
+          }
+          h1{
+            font-size: 1.5rem;
+          }
+          p{
+            font-size: 1rem;
+            line-height: 2vh;
+          }
+        }
+        .half1-pic{
+          width: 30%;
+          height: 25vh;
+          top: 5vh;
+        }
+      }
+      .half2{
+        padding: 0;
+        flex-direction: column;
+        ul{
+          padding: 3rem 3rem 0 3rem;
+          .half22{
+            width: 100%;
+            }
+          p{
+            font-size: 1rem;
+            padding: 2vh 0rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  #about-us{
+    .imgContent{
+      display: none;
+    }
+  }
+
+  #servicePage{
+    .serviceText{
+      h1{
+        font-size: 2rem;
+      }
+      p{
+        font-size: 0.75rem;
+        margin: 3rem 2rem 1.25rem 2rem;
+      }
+    }
+    .graphicPic{
+      ul{
+        li{
+          padding: 2rem 1rem;
+          .fas{
+            font-size: 2rem;
+          }
+          p{
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  #One-stop{
+    height: 200vh;
+    .container{
+      .half1{
+        height: 50vh;
+        .half1-text{
+          width: 100%;
+          h1, p{
+            padding-left: 10%;
+          }
+          h1{
+            font-size: 1.5rem;
+          }
+          p{
+            font-size: 0.75rem;
+            line-height: 2vh;
+          }
+        }
+        .half1-pic{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+
 // & div.homePage1Text {
 //     position: absolute;
 //     text-align: center;
@@ -301,3 +524,5 @@ section#servicePage {
     width: 100%;
     height: 100%;
 } */
+
+

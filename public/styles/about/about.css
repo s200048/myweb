@@ -67,8 +67,11 @@
 }
 
 @media screen and (max-width: 350px) {
-  #aboutMorepic {
+  #aboutMore #aboutMorepic {
     display: none;
+  }
+  #aboutMore #aboutMoreText .para {
+    font-size: 0.75rem;
   }
 }
 /*# sourceMappingURL=about.css.map */

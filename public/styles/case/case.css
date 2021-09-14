@@ -29,6 +29,7 @@
   height: 35vh;
   margin-bottom: 8rem;
   position: relative;
+  z-index: -1;
 }
 
 #casepage .case-pic .case p {
@@ -73,6 +74,39 @@
   background: url(../../images/casePage/210717_think_0.jpg);
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (max-width: 800px) {
+  #casepage {
+    height: 140vh;
+  }
+  #casepage .case-text h1 {
+    margin-top: 4rem;
+    font-size: 2rem;
+  }
+  #casepage .case-pic {
+    height: 130vh;
+    padding: 2rem;
+  }
+  #casepage .case-pic .case {
+    height: 20vh;
+    margin-bottom: 5rem;
+  }
+  #casepage .case-pic .case p {
+    font-size: 0.75rem;
+    bottom: -3vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #casepage {
+    height: 180vh;
+  }
+  #casepage .case-pic {
+    height: 250vh;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
 }
 
 @media screen and (max-width: 400px) {

@@ -5,6 +5,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 3;
     h1{
       color: #48A4A4; 
       text-align: center;
@@ -62,6 +63,9 @@ footer {
 @media screen and (max-width:780px){
   footer{
     height: 20vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
     h1{
       font-size: 1rem;
       margin-bottom: 0px;
@@ -96,7 +100,7 @@ footer {
 @media screen and (max-width:400px) {
   footer {
     align-items: flex-start;
-    height: 20vh;
+    height: 15vh;
     ul{
       
       justify-content: flex-start;

@@ -12,34 +12,33 @@ header {
   position: sticky;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
+  z-index: 10;
+  background: white;
 }
 
-header div.logo {
+header .logo {
   -webkit-box-flex: 6;
       -ms-flex-positive: 6;
           flex-grow: 6;
-}
-
-header div.logo p {
   font-size: 2rem;
   color: #48a4a4;
   font-weight: bold;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
-header nav ul {
+header .nav__menu .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* align-items: flex-start; */
-  /* justify-content: space-around; */
 }
 
-header nav ul li {
+header .nav__menu .nav__list li {
   list-style-type: none;
   padding: 0rem 2.2rem;
 }
 
-header nav ul li a {
+header .nav__menu .nav__list li a {
   text-decoration: none;
   color: #48a4a4;
   font-size: 1.5rem;
@@ -47,8 +46,26 @@ header nav ul li a {
   transition: 0.5s ease-in-out;
 }
 
-header nav ul li a:hover {
+header .nav__menu .nav__list li a:hover {
   color: black;
+}
+
+header .nav__menu .fa-times {
+  display: none;
+  z-index: 20;
+}
+
+header .menu__toggle {
+  color: #eee;
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+  display: none;
 }
 
 .dynamicHeader {
@@ -59,34 +76,79 @@ header nav ul li a:hover {
   z-index: 3;
 }
 
-.dynamicHeader a {
-  color: white;
-}
-
-.dynamicHeader a:hover {
+.dynamicHeader .logo, .dynamicHeader .nav__menu .nav__list a {
   color: #48a4a4;
 }
 
-@media screen and (max-width: 780px) {
+.dynamicHeader .logo:hover, .dynamicHeader .nav__menu .nav__list a:hover {
+  color: white;
+}
+
+.dynamicHeader .menu__toggle {
+  color: white;
+}
+
+@media screen and (max-width: 810px) {
   header {
     width: 100%;
     position: fixed;
     top: 0;
     height: 10vh;
+    font-size: 1rem;
+  }
+  header .menu__toggle {
+    display: block;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+  }
+  header .nav__menu {
+    z-index: 13;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 40%;
+    height: 100%;
+    -webkit-box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+            box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+    padding: 3rem 0rem;
+    -webkit-transition: .4s;
+    transition: .4s;
+    background: black;
+  }
+  header .nav__menu .nav__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    font-size: 1rem;
   }
-  header nav {
-    display: none;
+  header .nav__menu .nav__list li {
+    padding: 3rem 2rem;
+  }
+  header .nav__menu .fa-times {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 3vh;
+    right: 7vw;
+    font-size: 2rem;
+    cursor: pointer;
   }
 }
 
-@media screen and (max-width: 324px) {
-  header div.logo p {
+#nav-menu.active {
+  right: 0px;
+}
+
+@media screen and (max-width: 400px) {
+  header .logo, header .menu__toggle {
     font-size: 1.5rem;
+  }
+  header .nav__menu .nav__list li {
+    padding: 2rem 2rem;
+  }
+  header .nav__menu .nav__list li a {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=header.css.map */

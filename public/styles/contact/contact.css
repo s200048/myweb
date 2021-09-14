@@ -107,7 +107,7 @@
 
 @media screen and (max-width: 800px) {
   #contact-page {
-    height: 50vh;
+    height: 70vh;
   }
   #contact-page .container {
     -webkit-box-orient: vertical;
@@ -120,12 +120,27 @@
   }
   #contact-page .container .contact-text h1 {
     font-size: 1.5rem;
+    margin-bottom: 0;
   }
   #contact-page .container .contact-text p {
     font-size: 1rem;
+    padding: 1rem;
   }
   #contact-page .container .contact-pic {
     display: none;
+  }
+  #contact-form {
+    height: 110vh;
+  }
+  #contact-form .container-form h1 {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+  #contact-form .container-form form .form-inp {
+    width: 70vw;
+  }
+  #contact-form .container-form form button {
+    width: 50%;
   }
 }
 
@@ -140,6 +155,9 @@
     top: 5px;
     right: 7px;
   }
+  #contact-page {
+    height: 50vh;
+  }
   #contact-page .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -148,12 +166,10 @@
   }
   #contact-page .container .contact-text {
     padding: 0rem;
-    text-align: left;
   }
   #contact-page .container .contact-text h1 {
     text-align: center;
     padding: 4rem 0 1.5rem 0;
-    margin-bottom: 0;
   }
   #contact-page .container .contact-text p {
     padding: 0rem;

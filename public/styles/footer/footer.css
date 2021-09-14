@@ -14,6 +14,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 3;
 }
 
 footer h1 {
@@ -77,6 +78,9 @@ footer p {
 @media screen and (max-width: 780px) {
   footer {
     height: 20vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
   }
   footer h1 {
     font-size: 1rem;
@@ -106,7 +110,7 @@ footer p {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    height: 20vh;
+    height: 15vh;
   }
   footer ul {
     -webkit-box-pack: start;

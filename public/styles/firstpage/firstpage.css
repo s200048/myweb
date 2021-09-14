@@ -56,7 +56,7 @@ section.homePage1 div.firstBackgoundPic {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: 0;
+  z-index: 1;
 }
 
 section.homePage1 div.firstBackgoundPic p {
@@ -105,6 +105,10 @@ section.aboutUs {
   width: 100%;
 }
 
+section.aboutUs .aboutContent {
+  text-align: center;
+}
+
 section.aboutUs .aboutContent h1 {
   font-size: 3rem;
   font-weight: bold;
@@ -112,13 +116,12 @@ section.aboutUs .aboutContent h1 {
 }
 
 section.aboutUs .aboutContent a {
+  display: inline-block;
   border: solid 1px;
   padding: 1rem 1.5rem;
   font-size: 1rem;
   text-decoration: none;
   color: black;
-  display: block;
-  margin: 0.5% 33%;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
   opacity: 0.4;
@@ -151,7 +154,7 @@ section.aboutUs .imgContent .aboutimg2 {
   height: 50vh;
 }
 
-section#servicePage {
+#servicePage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,17 +165,17 @@ section#servicePage {
   padding: 2rem;
 }
 
-section#servicePage .serviceText h1,
-section#servicePage .serviceText p {
+#servicePage .serviceText h1,
+#servicePage .serviceText p {
   text-align: center;
 }
 
-section#servicePage .serviceText h1 {
+#servicePage .serviceText h1 {
   font-size: 3rem;
   margin-top: 3rem;
 }
 
-section#servicePage .serviceText p {
+#servicePage .serviceText p {
   font-size: 1.5rem;
   margin: 3rem 3rem 1.25rem 3rem;
   line-height: 5vh;
@@ -180,7 +183,7 @@ section#servicePage .serviceText p {
   letter-spacing: 4px;
 }
 
-section#servicePage .graphicPic {
+#servicePage .graphicPic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,7 +192,7 @@ section#servicePage .graphicPic {
           justify-content: center;
 }
 
-section#servicePage .graphicPic ul {
+#servicePage .graphicPic ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,17 +207,17 @@ section#servicePage .graphicPic ul {
   text-align: center;
 }
 
-section#servicePage .graphicPic ul li {
+#servicePage .graphicPic ul li {
   margin: 3rem 4rem;
   padding: 3rem 4rem;
 }
 
-section#servicePage .graphicPic ul li i {
+#servicePage .graphicPic ul li i {
   font-size: 4.5rem;
   margin-bottom: 2rem;
 }
 
-section#servicePage .graphicPic ul li p {
+#servicePage .graphicPic ul li p {
   font-size: 2rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1ebea), to(#272538));
   background: linear-gradient(to bottom, #f1ebea 0%, #272538 100%);
@@ -302,6 +305,191 @@ section#servicePage .graphicPic ul li p {
   background: url(../../images/homepage4/design.jpg);
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (max-width: 1570px) {
+  #about-us .aboutContent p {
+    line-height: 8vh;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  #about-us .aboutContent h1 {
+    font-size: 2rem;
+  }
+  #about-us .aboutContent p {
+    font-size: 1.25rem;
+    line-height: 5vh;
+    padding: 0rem 2rem 4rem 2rem;
+  }
+  #about-us .aboutContent a {
+    padding: 0.5rem 1rem;
+  }
+  #about-us .imgContent {
+    width: 50%;
+  }
+  #about-us .imgContent img {
+    height: 50%;
+  }
+  #servicePage .graphicPic {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+  }
+  #servicePage .graphicPic ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #servicePage .graphicPic ul li {
+    margin: 0px;
+    padding: 3rem 2rem;
+  }
+  #servicePage .graphicPic ul li .fas {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  #servicePage .graphicPic ul li p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #home-page .firstBackgoundPic p {
+    font-size: 1.5rem;
+  }
+  #home-page .firstBackgoundPic a {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+  #about-us .aboutContent h1 {
+    font-size: 1.5rem;
+  }
+  #about-us .aboutContent p {
+    font-size: 0.75rem;
+    line-height: 5vh;
+    padding: 0rem 2rem 2rem 2rem;
+  }
+  #about-us .aboutContent a {
+    padding: 0.5rem 1rem;
+  }
+  #about-us .imgContent {
+    width: 50%;
+  }
+  #about-us .imgContent img {
+    height: 50%;
+  }
+  #servicePage .serviceText h1 {
+    font-size: 2rem;
+  }
+  #servicePage .serviceText p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  #servicePage .graphicPic {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+  }
+  #servicePage .graphicPic ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #servicePage .graphicPic ul li {
+    margin: 0px;
+    padding: 3rem 2rem;
+  }
+  #servicePage .graphicPic ul li .fas {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  #servicePage .graphicPic ul li p {
+    font-size: 1.5rem;
+  }
+  #One-stop {
+    height: 190vh;
+  }
+  #One-stop .container .half1 .half1-text h1, #One-stop .container .half1 .half1-text p {
+    padding-left: 10%;
+  }
+  #One-stop .container .half1 .half1-text h1 {
+    font-size: 1.5rem;
+  }
+  #One-stop .container .half1 .half1-text p {
+    font-size: 1rem;
+    line-height: 2vh;
+  }
+  #One-stop .container .half1 .half1-pic {
+    width: 30%;
+    height: 25vh;
+    top: 5vh;
+  }
+  #One-stop .container .half2 {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #One-stop .container .half2 ul {
+    padding: 3rem 3rem 0 3rem;
+  }
+  #One-stop .container .half2 ul .half22 {
+    width: 100%;
+  }
+  #One-stop .container .half2 ul p {
+    font-size: 1rem;
+    padding: 2vh 0rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #about-us .imgContent {
+    display: none;
+  }
+  #servicePage .serviceText h1 {
+    font-size: 2rem;
+  }
+  #servicePage .serviceText p {
+    font-size: 0.75rem;
+    margin: 3rem 2rem 1.25rem 2rem;
+  }
+  #servicePage .graphicPic ul li {
+    padding: 2rem 1rem;
+  }
+  #servicePage .graphicPic ul li .fas {
+    font-size: 2rem;
+  }
+  #servicePage .graphicPic ul li p {
+    font-size: 1rem;
+  }
+  #One-stop {
+    height: 200vh;
+  }
+  #One-stop .container .half1 {
+    height: 50vh;
+  }
+  #One-stop .container .half1 .half1-text {
+    width: 100%;
+  }
+  #One-stop .container .half1 .half1-text h1, #One-stop .container .half1 .half1-text p {
+    padding-left: 10%;
+  }
+  #One-stop .container .half1 .half1-text h1 {
+    font-size: 1.5rem;
+  }
+  #One-stop .container .half1 .half1-text p {
+    font-size: 0.75rem;
+    line-height: 2vh;
+  }
+  #One-stop .container .half1 .half1-pic {
+    display: none;
+  }
 }
 
 /* section.homePage1 div.firstBackgoundPic {
