@@ -36,6 +36,15 @@
   background-size: cover;
 }
 
+@media screen and (max-width: 1000px) {
+  #aboutMore #aboutMoreText h1 {
+    font-size: 2rem;
+  }
+  #aboutMore #aboutMoreText .para {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 800px) {
   #aboutMore {
     -webkit-box-orient: vertical;
@@ -54,7 +63,7 @@
   }
   #aboutMore #aboutMoreText .para {
     line-height: 3vh;
-    font-size: 1rem;
+    font-size: 0.75rem;
     margin-bottom: 1.5rem;
   }
   #aboutMore #aboutMoreText .p1 {

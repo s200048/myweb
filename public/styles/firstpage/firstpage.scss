@@ -284,6 +284,22 @@ section.aboutUs {
       }
     }  
   }
+
+  #One-stop{
+    .container{
+      .half1{
+        .half1-text{
+          h1{
+            font-size: 2rem;
+          }
+          p{
+            font-size: 1.5rem;
+            line-height: 3vh;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1350px) {
@@ -327,6 +343,47 @@ section.aboutUs {
             font-size: 1.5rem;
           }
         }
+      }
+    }
+  }
+
+  #One-stop{
+    height: 180vh;
+    .container{
+      .half1{
+        margin-bottom: 3rem;
+        .half1-text{
+          h1, p{
+            padding-left: 10%;
+          }
+          h1{
+            padding-top: 1rem;
+          }
+        }
+      }
+      .half2{
+        padding: 0;
+        flex-direction: column;
+        ul{
+          padding: 3rem 3rem 0 3rem;
+          .half22{
+            width: 100%;
+            }
+          p{
+            font-size: 1rem;
+            padding: 2vh 0rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 940px) {
+  #home-page{
+    .firstBackgoundPic{
+      p{
+        font-size: 2rem;
       }
     }
   }
@@ -403,9 +460,6 @@ section.aboutUs {
     .container{
       .half1{
         .half1-text{
-          h1, p{
-            padding-left: 10%;
-          }
           h1{
             font-size: 1.5rem;
           }
@@ -420,20 +474,7 @@ section.aboutUs {
           top: 5vh;
         }
       }
-      .half2{
-        padding: 0;
-        flex-direction: column;
-        ul{
-          padding: 3rem 3rem 0 3rem;
-          .half22{
-            width: 100%;
-            }
-          p{
-            font-size: 1rem;
-            padding: 2vh 0rem;
-          }
-        }
-      }
+      
     }
   }
 }
@@ -460,7 +501,7 @@ section.aboutUs {
       ul{
         li{
           padding: 2rem 1rem;
-          .fas{
+          .fas, .far{
             font-size: 2rem;
           }
           p{
@@ -475,18 +516,11 @@ section.aboutUs {
     height: 200vh;
     .container{
       .half1{
-        height: 50vh;
+        height: 40vh;
         .half1-text{
           width: 100%;
-          h1, p{
-            padding-left: 10%;
-          }
-          h1{
-            font-size: 1.5rem;
-          }
           p{
             font-size: 0.75rem;
-            line-height: 2vh;
           }
         }
         .half1-pic{

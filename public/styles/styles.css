@@ -106,7 +106,7 @@ header .menu__toggle {
   color: white;
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 940px) {
   header {
     width: 100%;
     position: fixed;
@@ -483,6 +483,13 @@ section.aboutUs .imgContent .aboutimg2 {
   #about-us .aboutContent p {
     line-height: 8vh;
   }
+  #One-stop .container .half1 .half1-text h1 {
+    font-size: 2rem;
+  }
+  #One-stop .container .half1 .half1-text p {
+    font-size: 1.5rem;
+    line-height: 3vh;
+  }
 }
 
 @media screen and (max-width: 1350px) {
@@ -525,6 +532,41 @@ section.aboutUs .imgContent .aboutimg2 {
   }
   #servicePage .graphicPic ul li p {
     font-size: 1.5rem;
+  }
+  #One-stop {
+    height: 180vh;
+  }
+  #One-stop .container .half1 {
+    margin-bottom: 3rem;
+  }
+  #One-stop .container .half1 .half1-text h1, #One-stop .container .half1 .half1-text p {
+    padding-left: 10%;
+  }
+  #One-stop .container .half1 .half1-text h1 {
+    padding-top: 1rem;
+  }
+  #One-stop .container .half2 {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #One-stop .container .half2 ul {
+    padding: 3rem 3rem 0 3rem;
+  }
+  #One-stop .container .half2 ul .half22 {
+    width: 100%;
+  }
+  #One-stop .container .half2 ul p {
+    font-size: 1rem;
+    padding: 2vh 0rem;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  #home-page .firstBackgoundPic p {
+    font-size: 2rem;
   }
 }
 
@@ -586,9 +628,6 @@ section.aboutUs .imgContent .aboutimg2 {
   #One-stop {
     height: 190vh;
   }
-  #One-stop .container .half1 .half1-text h1, #One-stop .container .half1 .half1-text p {
-    padding-left: 10%;
-  }
   #One-stop .container .half1 .half1-text h1 {
     font-size: 1.5rem;
   }
@@ -600,23 +639,6 @@ section.aboutUs .imgContent .aboutimg2 {
     width: 30%;
     height: 25vh;
     top: 5vh;
-  }
-  #One-stop .container .half2 {
-    padding: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #One-stop .container .half2 ul {
-    padding: 3rem 3rem 0 3rem;
-  }
-  #One-stop .container .half2 ul .half22 {
-    width: 100%;
-  }
-  #One-stop .container .half2 ul p {
-    font-size: 1rem;
-    padding: 2vh 0rem;
   }
 }
 
@@ -634,7 +656,7 @@ section.aboutUs .imgContent .aboutimg2 {
   #servicePage .graphicPic ul li {
     padding: 2rem 1rem;
   }
-  #servicePage .graphicPic ul li .fas {
+  #servicePage .graphicPic ul li .fas, #servicePage .graphicPic ul li .far {
     font-size: 2rem;
   }
   #servicePage .graphicPic ul li p {
@@ -644,20 +666,13 @@ section.aboutUs .imgContent .aboutimg2 {
     height: 200vh;
   }
   #One-stop .container .half1 {
-    height: 50vh;
+    height: 40vh;
   }
   #One-stop .container .half1 .half1-text {
     width: 100%;
   }
-  #One-stop .container .half1 .half1-text h1, #One-stop .container .half1 .half1-text p {
-    padding-left: 10%;
-  }
-  #One-stop .container .half1 .half1-text h1 {
-    font-size: 1.5rem;
-  }
   #One-stop .container .half1 .half1-text p {
     font-size: 0.75rem;
-    line-height: 2vh;
   }
   #One-stop .container .half1 .half1-pic {
     display: none;
@@ -709,6 +724,15 @@ section.aboutUs .imgContent .aboutimg2 {
   background-size: cover;
 }
 
+@media screen and (max-width: 1000px) {
+  #aboutMore #aboutMoreText h1 {
+    font-size: 2rem;
+  }
+  #aboutMore #aboutMoreText .para {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 800px) {
   #aboutMore {
     -webkit-box-orient: vertical;
@@ -727,7 +751,7 @@ section.aboutUs .imgContent .aboutimg2 {
   }
   #aboutMore #aboutMoreText .para {
     line-height: 3vh;
-    font-size: 1rem;
+    font-size: 0.75rem;
     margin-bottom: 1.5rem;
   }
   #aboutMore #aboutMoreText .p1 {
@@ -826,12 +850,25 @@ section.aboutUs .imgContent .aboutimg2 {
   background-size: cover;
 }
 
+@media screen and (max-width: 1180px) {
+  #casepage {
+    height: 220vh;
+  }
+  #casepage .case-text h1 {
+    font-size: 2rem;
+    padding: 4rem 3rem 0rem 3rem;
+  }
+  #casepage .case-pic .case p {
+    bottom: -8vh;
+    font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 800px) {
   #casepage {
     height: 140vh;
   }
   #casepage .case-text h1 {
-    margin-top: 4rem;
     font-size: 2rem;
   }
   #casepage .case-pic {
@@ -861,7 +898,8 @@ section.aboutUs .imgContent .aboutimg2 {
 
 @media screen and (max-width: 400px) {
   #casepage .case-text h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    padding: 2rem 1rem 0rem 1rem;
   }
   #casepage .case-text p {
     font-size: 0.75rem;
