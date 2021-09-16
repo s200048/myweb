@@ -1124,7 +1124,6 @@ section.aboutUs .imgContent .aboutimg2 {
 #formHandler a {
   display: inline-block;
   text-transform: uppercase;
-  width: 15%;
   border: solid 1px;
   color: black;
   background: white;
@@ -1140,6 +1139,21 @@ section.aboutUs .imgContent .aboutimg2 {
   opacity: 1;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
           box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+@media screen and (max-width: 800px) {
+  #formHandler h1, #formHandler p {
+    padding: 1rem;
+  }
+  #formHandler h1 {
+    font-size: 2rem;
+  }
+  #formHandler p {
+    font-size: 1rem;
+  }
+  #formHandler a {
+    font-size: 0.75rem;
+  }
 }
 
 footer {

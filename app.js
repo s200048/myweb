@@ -3,11 +3,25 @@ const app = express();
 const mongoose = require("mongoose");
 const path = require("path");
 const bodyParser = require("body-parser");
+const Contact = require("./models/contact");
 
 //middleware
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.urlencoded({ extended: true }));
+
+
+//connect to MongoDB
+mongoose
+  .connect("mongodb://localhost:27017/exampleDB")
+  .then(() => {
+    console.log("Successfully connnecting to mongoDB.");
+  })
+  .catch((e) => {
+    console.log("Fail connect to mongodb.");
+    console.log(e);
+  });
+
 
 // Homepage
 app.get("/", (req, res) => {
@@ -30,8 +44,15 @@ app.get("/contact", (req, res) => {
 });
 
 app.post("/contact/formhandler", (req, res) => {
-  console.log(req.body);
-  res.render("contactViews/formhandler");
+  // console.log(req.body);
+  let {firstname, lastname, email, tel, address, designreq} = req.body;
+  let newContact = new Contact(req.body);
+  newContact.save().then(() =>{
+    console.log("Saved data.");
+    res.render("contactViews/formhandler");
+  }).catch((e) => {
+    console.log(e);
+  })
 });
 
 app.listen(3000, () => {
